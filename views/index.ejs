@@ -7,23 +7,15 @@
 		<h1> Samantha Yeager </h1>
 		<h2> UI/UX Designer</h2>
 		<div class="nav">
-			<div class="nav-item">
-				<p>Projects</p>
-			</div>
-			<div class="nav-item">
-				<p>Resume</p>
-			</div>
-			<div class="nav-item">
-				<p>About Me</p>
-			</div>
-			<div class="nav-item">
-				<p>Contact</p>
-			</div>
+			<a class="nav-item" href="/#projects">Projects</a>
+			<a class="nav-item" href="/#resume">Resume</a>
+			<a class="nav-item" href="/#about">About Me</a>
+			<a class="nav-item" href="/#contact">Contact</a>
 		</div>
 	</header>
 	<div class="main">
 		<div class="section-card">
-			<img class="section-header" src ="/images/header_projects.png"/>
+			<img id="projects" class="section-header" src ="/images/header_projects.png"/>
 			<!-- <h3>Projects</h3> -->
 			<div class="section-1 no-overflow main-proj">
 				<h3>WildTangent Casino</h3>
@@ -45,7 +37,7 @@
 			</div>
 		</div>
 		<div class="section-full-dark">
-			<img class="section-header" src ="/images/header_resume.png" alt="Resume"/>
+			<img id="resume" class="section-header" src ="/images/header_resume.png" alt="Resume"/>
 			<div class="flex-wrap">
 				<div class="section-dark section-3">
 					<h3>Languages</h3>
@@ -171,46 +163,11 @@
 			</div>
 		</div>
 		<div class="section-full-light end-margin">
-			<img class="section-header" src ="/images/header_about.png" alt="Resume"/>
+			<img id="about" class="section-header" src ="/images/header_about.png" alt="Resume"/>
 			<div class="section-light">
 				<p>Open to freelance, contract, and fulltime positions</p>
 			</div>
 		</div>
 	</div>
-
-
-<!-- <div class="page-wrap">
-	<div class="top-content">
-		<img  id="brand-image" alt="Brand" src="./Images/Signature.png">
-		<h1>Portfolio</h1>
-	</div>
-
-	<hr>
-
-	<div class="all-projects">
-
-		<div class="main-project">
-			<h2>WildTangent Casino</h2>
-			<div class="project-content">
-			</div>
-		</div>
-
-		<div class="other-projects">
-			<div class="project">
-				<h2>Spell Slingers</h2>
-				<div class="project-content">
-				</div>
-			</div>
-
-			<div class="spacer"></div>
-
-			<div class="project">
-				<h2>Stellar Fortune</h2>
-				<div class="project-content">
-				</div>
-			</div>	
-		</div>
-	</div>
-</div> -->
 
 <% include ./partials/footer.ejs %>

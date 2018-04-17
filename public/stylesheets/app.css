@@ -93,7 +93,6 @@ li span {
 	////////////////////////////////////////////	*/ 
 
 .nav {
-	color: #dbc5c5;
 	display: flex;
 	justify-content: center;
 	margin: 50px 0 0 0;
@@ -102,18 +101,25 @@ li span {
 }
 
 .nav-item {
+	color: #dbc5c5;
 	padding: 10px 20px;
 	border-right: 1px solid rgba(0, 0, 0, 0.25);
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
-	/*background-color: #b31c1b;*/
+	text-decoration: none;
 }
 
 .nav-item:first-of-type {
 	border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.nav-item p {
-	margin: 0;
+.nav-item:hover {
+	color: white;
+	background-color: #b31c1b;
+	border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-item:active {
+	color: #b2a0a0;
+	background-color: #6d1110;
 }
 
 /* 	////////////////////////////////////////////
@@ -308,7 +314,7 @@ li span {
 	grid-area: contact;
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: #dbc5c5;
 	background-color: #b31c1b;
 	padding: 15px;
 	border-top: 1px solid #850606;
@@ -316,12 +322,29 @@ li span {
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
 
+.contact-item {
+	display: flex;
+	justify-content: center;
+}
+
 .footer {
 	grid-area: footer;
 	font-size: 1em;
-	color: white;
+	color: #dbc5c5;
 	background-color: #850606;
 	padding: 14px 0;
+}
+
+.icon-link {
+	color: #dbc5c5;
+}
+
+.icon-link:hover {
+	color: white;
+}
+
+.icon-link:active {
+	color: #6d1110;
 }
 
 .phone {
@@ -334,9 +357,6 @@ li span {
 	padding: 0 10px;
 }
 
-.contact p {
-	margin-bottom: 0;
-}
 
 /* 	////////////////////////////////////////////
 	HELPER CLASSES - small, generic, reusable
