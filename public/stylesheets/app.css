@@ -33,17 +33,97 @@ h2 {
 h3 {
 	color: #ee2524;
 	font-size: 2em;
-	margin: 0 auto;
+	margin: 0 auto 25px auto;
+}
+
+ul {
+	padding-left: 0;
 }
 
 li {
 	text-align: left;
 	list-style: none;
-	margin: 5px;
+	margin-top: 10px;
 	padding: 7px;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	border-radius: 7px;
 	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+li span {
+	padding: 10px;
+	border-radius: 7px;
+	margin-right: 4px;
+	color: white;
+	font-size: 0.85em;
+	overflow: hidden;
+	line-height: 100%;
+}
+
+.chip {
+	display: flex;
+	border-radius: 7px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+	max-width: 230px;
+	margin: 5px;
+	align-items: stretch;
+}
+
+.chip-tag {
+	color: white;
+	background-color: grey;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding: 7px;	
+	width: auto;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.chip-body {
+	padding: 7px;
+	max-width: 250px;
+}
+
+.chip-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.tag-art {
+	background-color: #ee2524;
+}
+
+.tag-anim {
+	background-color: #f76911;
+}
+
+.tag-engine {
+	background-color: #4e52ce;
+}
+
+.tag-proto {
+	background-color: #4ee5d8;
+}
+
+.tag-org {
+	background-color: #ba3cd1
+}
+
+.tag-ctrl {
+	background-color: #7c10f7;
+}
+
+.tag-right {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	opacity: 0.75;
+	width: 1px;
 }
 
 .center {
@@ -131,7 +211,7 @@ li {
 	height: 400px;
 }
 
-.section-1, .section-2, .section-3 {
+.no-overflow {
 	overflow: hidden;
 }
 
