@@ -4,6 +4,7 @@ html, body {
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 }
+
 body {
 	min-height: 100%;
 	display: grid;
@@ -36,6 +37,10 @@ h3 {
 	margin: 0 auto 25px auto;
 }
 
+h4 {
+	color: #ee2524;
+}
+
 ul {
 	padding-left: 0;
 }
@@ -62,113 +67,58 @@ li span {
 	line-height: 100%;
 }
 
-.chip {
-	display: flex;
-	border-radius: 7px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
-	max-width: 230px;
-	margin: 5px;
-	align-items: stretch;
-}
-
-.chip-tag {
-	color: white;
-	background-color: grey;
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
-	padding: 7px;	
-	width: auto;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.chip-body {
-	padding: 7px;
-	max-width: 250px;
-}
-
-.chip-wrap {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: flex-start;
-}
-
-.tag-art {
-	background-color: #ee2524;
-}
-
-.tag-anim {
-	background-color: #f76911;
-}
-
-.tag-engine {
-	background-color: #4e52ce;
-}
-
-.tag-proto {
-	background-color: #4ee5d8;
-}
-
-.tag-org {
-	background-color: #ba3cd1
-}
-
-.tag-ctrl {
-	background-color: #7c10f7;
-}
-
-.tag-right {
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
-	opacity: 0.75;
-	width: 1px;
-}
-
-.center {
-	flex-grow: 1;
-}
-
-.contact {
-	grid-area: contact;
-	display: flex;
-	flex-direction: column;
-	color: white;
-	background-color: #b31c1b;
-	padding: 15px;
-	border-top: 1px solid #850606;
-	border-bottom: 1px solid #5e0404
-	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-}
-
-.footer {
-	grid-area: footer;
-	font-size: 1em;
-	color: white;
-	background-color: #850606;
-	padding: 14px 0;
-}
-
-.footer i {
-	padding: 0 10px 25px 10px;
-}
+/* 	////////////////////////////////////////////
+	HEADER - Logo, name, title, and nav
+	////////////////////////////////////////////	*/
 
 .header {
 	grid-area: header;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	justify-content: center;
 	background-color: #b31c1b;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-	padding: 50px 0;
+	padding: 50px 0 0 0;
 }
 
-.inline {
-	display: inline;
+.signature {
+	width: 200px;
+	height: 200px;
+	margin: 25px;
 }
+
+/* 	////////////////////////////////////////////
+	NAV
+	////////////////////////////////////////////	*/ 
+
+.nav {
+	color: #dbc5c5;
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 0 0;
+	width: 100%;
+	background-color: #8e1615;
+}
+
+.nav-item {
+	padding: 10px 20px;
+	border-right: 1px solid rgba(0, 0, 0, 0.25);
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	/*background-color: #b31c1b;*/
+}
+
+.nav-item:first-of-type {
+	border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-item p {
+	margin: 0;
+}
+
+/* 	////////////////////////////////////////////
+	MAIN - main body content organization in grid
+	////////////////////////////////////////////	*/
 
 .main {
 	grid-area: main;
@@ -176,6 +126,25 @@ li span {
 	grid-gap: 10px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
+}
+
+/* 	////////////////////////////////////////////
+	BODY SECTIONS - 3 styles - card, dark, and 
+	light to alternate as needed.
+	////////////////////////////////////////////	*/ 
+
+.flex-wrap {
+	grid-column: 1 / span 3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-proj {
+	height: 400px;
+}
+
+.section-card .section-header {
+	width: 13%;
 }
 
 .section-card {
@@ -198,28 +167,6 @@ li span {
 	margin-bottom: -50px;
 }
 
-.section-card .section-header {
-	width: 13%;
-}
-
-.section-1 {
-	grid-column: 1 / span 3;
-	background-color: #f9f7f7;
-	margin-bottom: 20px;
-	padding: 25px;
-	border-radius: 10px;
-	height: 400px;
-}
-
-.no-overflow {
-	overflow: hidden;
-}
-
-.section-1 img, .section-2 img, .section-3 img {
-	height: 350px;
-	margin-top: 15px;
-}
-
 .section-light, .section-dark {
 	margin: 0;
 	padding: 25px;
@@ -232,6 +179,32 @@ li span {
 
 .section-dark {
 	border: 1px solid #e2dbdb;
+}
+
+.section-full-dark {
+	grid-column: 1 / span 3;
+	background-color: #f9f7f7;
+	padding: 25px;
+	margin-top: 150px;
+}
+
+.section-full-light {
+	grid-column: 1 / span 3;
+	padding: 25px;
+	margin-top: 150px;
+}
+
+.section-1 img, .section-2 img, .section-3 img {
+	height: 350px;
+	margin-top: 15px;
+}
+
+.section-1 {
+	grid-column: 1 / span 3;
+	background-color: #f9f7f7;
+	margin-bottom: 20px;
+	padding: 25px;
+	border-radius: 10px;
 }
 
 .section-2 {
@@ -258,37 +231,123 @@ li span {
 	margin-left: 20px;
 }
 
-.flex-wrap {
-	grid-column: 1 / span 3;
+/* 	////////////////////////////////////////////
+	CHIPS - small bits of information with a tag
+	i.e. software or languages I know 		  
+	////////////////////////////////////////////	*/
+
+.chip {
 	display: flex;
-	justify-content: space-between;
+	border-radius: 7px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+	max-width: 230px;
+	margin: 5px;
+	align-items: stretch;
 }
 
-.section-full-dark {
-	grid-column: 1 / span 3;
-	background-color: #f9f7f7;
-	padding: 25px;
-	margin-top: 150px;
+.chip-body {
+	padding: 7px;
+	max-width: 250px;
 }
 
-.section-full-light {
-	grid-column: 1 / span 3;
-	padding: 25px;
-	margin-top: 150px;
+.chip-tag {
+	color: white;
+	background-color: grey;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding: 7px;	
+	width: auto;
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.signature {
-	width: 200px;
-	height: 200px;
-	margin: 25px;
+.chip-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
+
+.tag-art {
+	background-color: #ee2524;
+}
+
+.tag-anim {
+	background-color: #f76911;
+}
+
+.tag-ctrl {
+	background-color: #7c10f7;
+}
+
+.tag-engine {
+	background-color: #4e52ce;
+}
+
+.tag-org {
+	background-color: #ba3cd1
+}
+
+.tag-proto {
+	background-color: #4ee5d8;
+}
+
+/*.tag-right {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	opacity: 0.75;
+	width: 1px;
+}*/
+
+/* 	////////////////////////////////////////////
+	FOOTER - contact info and copyright claim
+	////////////////////////////////////////////	*/
+
+.contact {
+	grid-area: contact;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: #b31c1b;
+	padding: 15px;
+	border-top: 1px solid #850606;
+	border-bottom: 1px solid #5e0404
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+}
+
+.footer {
+	grid-area: footer;
+	font-size: 1em;
+	color: white;
+	background-color: #850606;
+	padding: 14px 0;
+}
+
+.phone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact i {
+	padding: 0 10px;
+}
+
+.contact p {
+	margin-bottom: 0;
+}
+
+/* 	////////////////////////////////////////////
+	HELPER CLASSES - small, generic, reusable
+	////////////////////////////////////////////	*/
 
 .end-margin {
 	margin-bottom: 150px;
 }
 
-.contact p {
-	margin-bottom: 0;
+.no-overflow {
+	overflow: hidden;
 }
 
 .margin {
