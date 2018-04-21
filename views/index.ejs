@@ -1,243 +1,431 @@
 <% include ./partials/header.ejs %>	
 
-	<header class="header">
-		<div>
-			<img class="signature" src="/images/Signature.png"/>
-		</div>
-		<h1> Samantha Yeager </h1>
-		<h2> UI/UX Designer</h2>
-		<div class="nav">
+	<div class="nav">
+		<div class=nav-links>
 			<a class="nav-item" href="/#projects">Projects</a>
-			<a class="nav-item" href="/#resume">Resume</a>
+			<a class="nav-item" href="/#resume">Resumé</a>
+			<div class="nav-brand">
+				<img class="signature" src="/images/Signature.png"/>
+			</div>
 			<a class="nav-item" href="/#about">About Me</a>
 			<a class="nav-item" href="/#contact">Contact</a>
 		</div>
-	</header>
-
-	
-
-	<div class="main">
-		<div class="section-card">
-			<img id="projects" class="section-header" src ="/images/header_projects.png"/>
-			<!-- <h3>Projects</h3> -->
-			<div class="section-1 no-overflow proj">
-				<h3>WildTangent Casino</h3>
-				<img src="/images/WildTangentHeader.png"/>
-			</div>
-			<div class="flex-wrap">
-				<div class="section-light section-2 no-overflow proj">
-					<h3>Spell Slingers</h3>
-					<img src="/images/WildTangentHeader.png"/>
-				</div>
-				<div class="section-light section-2 no-overflow proj">
-					<h3>Stellar Fortune</h3>
-					<img src="/images/WildTangentHeader.png"/>
-				</div>
-			</div>
-		</div>
-		<div class="section-full-dark">
-			<img id="resume" class="section-header" src ="/images/header_resume.png" alt="Resume"/>
-			<div class="flex-wrap">
-				<div class="section-dark section-3">
-					<h3>Languages</h3>
-					<div class="chip-wrap">
-						<div class="chip">
-							<div class="chip-tag tag-art">Markup</div>
-							<div class="chip-body">HTML5</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-art">Markup</div>
-							<div class="chip-body">CSS3</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-engine">Script</div>
-							<div class="chip-body">Javascript ES6</div>
-							<!-- <div class="chip-tag tag-right tag-engine"></div> -->
-
-						</div>
-					</div>
-					<h4>Frameworks, Libraries, & Tools</h4>
-					<div class="chip-wrap">
-						<div class="chip">
-							<div class="chip-tag tag-proto">Frame</div>
-							<div class="chip-body">Express</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-engine">Runtime Env</div>
-							<div class="chip-body">Node.js</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-					</div>
-				</div>
-				<div class="section-dark section-3">
-					<h3>Software</h3>
-					<div class="chip-wrap">
-						<div class="chip">
-							<div class="chip-tag tag-art">Art</div>
-							<div class="chip-body">Adobe Photoshop</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-art">Art</div>
-							<div class="chip-body">Adobe Illustrator</div>
-							<!-- <div class="chip-tag tag-right tag-art"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-anim">Anim</div>
-							<div class="chip-body">Adobe After Effects</div>
-							<!-- <div class="chip-tag tag-right tag-anim"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-proto">Proto</div>
-							<div class="chip-body">Proto.io</div>
-							<!-- <div class="chip-tag tag-right tag-proto"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-engine">Game Engine</div>
-							<div class="chip-body">Unity3D</div>
-							<!-- <div class="chip-tag tag-right tag-proto"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-org">Organize</div>
-							<div class="chip-body">Trello</div>
-							<!-- <div class="chip-tag tag-right tag-org"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-ctrl">VCS</div>
-							<div class="chip-body">Perforce</div>
-							<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
-						</div>
-						<div class="chip">
-							<div class="chip-tag tag-ctrl">VCS</div>
-							<div class="chip-body">Git</div>
-							<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
-						</div>
-					</div>
-				</div>
-				<div class="section-dark section-3">
-					<h3>Education</h3>
-					<ul>
-						<li>
-							Ohio University
-							<ul>
-								<li>B.S. in Digital Media: Games and Animation</li>
-								<li>Minor in Computer Science</li>
-								<li>Certificate in Chinese Language</li>
-							</ul>
-						</li>
-						<li>
-							Projects of Note
-							<ul>
-								<li>SunSat (2011), presented at ISDC 2011 in Huntsville</li>
-								<li>SunSat (2012) presented at ISDC 2012 in Washington D.C.</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="section-1 section-dark margin">
-				<h3>Work Experience</h3>
-				<div class="work-wrap">
-					<div class="work-header">
-						<h4>Cake Golem Productions, LLC.</h4>
-						<h4>& Legacy Game Systems</h4>
-					</div>
-					<div class="work-body">
-						<div class="logos">
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/CakeGolemProductions.png"/>
-							</div>
-							<i class="fas fa-plus"></i>
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/LGS.png"/>
-							</div>
-						</div>
-					<div class="work-content">
-						<div class="work-content-item">
-							<p>Stats</p>
-						</div>
-						<div class="work-content-item">
-							<p>Projects</p>
-						</div>
-						<div class="work-content-item">
-							<p>Responsibilities</p>
-						</div>
-					</div>
-				</div>
-					
-				</div>
-				<div class="work-wrap">
-					<div class="work-header">
-						<h4>WildTangent Studios</h4>
-					</div>
-					<div class="work-body">
-						<div class="logos">
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/WTGames.png"/>
-							</div>
-						</div>
-						<div>
-							<p>Find it on the app store!</p>
-						</div>
-					</div>
-				</div>
-				<div class="work-wrap">
-					<div class="work-header">
-						<h4>Global Gaming Group (G3)</h4>
-					</div>
-					<div class="work-body">
-						<div class="logos">
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/G3.png"/>
-							</div>
-						</div>
-						<div>
-							<p>Find it on the app store!</p>
-						</div>
-					</div>
-				</div>
-				<div class="work-wrap">
-					<div class="work-header">
-						<h4>Spin for Good</h4>
-					</div>
-					<div class="work-body">
-						<div class="logos">
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/SpinForGood.png"/>
-							</div>
-						</div>
-						<div>
-							<p>Find it on the app store!</p>
-						</div>
-					</div>
-				</div>
-				<div class="work-wrap">
-					<div class="work-header">
-						<h4>Sunstorm Games</h4>
-					</div>
-					<div class="work-body">
-						<div class="logos">
-							<div class="company-logo">
-								<img src ="/images/CompanyLogos/Sunstorm.png"/>
-							</div>
-						</div>
-						<div>
-							<p>Find it on the app store!</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="section-full-light end-margin">
-			<img id="about" class="section-header" src ="/images/header_about.png" alt="Resume"/>
-			<div class="section-light">
-				<p>Open to freelance, contract, and fulltime positions</p>
-			</div>
-		</div>
 	</div>
+
+	<div class="grid">
+		<header class="header">
+			<div>
+				<img class="signature" src="/images/Signature.png"/>
+			</div>
+			<h1> Samantha Yeager </h1>
+			<h2> UI/UX Designer</h2>
+		</header>
+
+		<!-- PROJECTS -->
+		<div class="main">
+			<div id="projects">
+				<img class="section-header" src ="/images/header_projects.png"/>
+					<!-- <h3>Projects</h3> -->
+				<div class="section-card">
+					<div class="section-1 no-overflow bg-cover bg-wildtangent-casino">
+						<h3>WildTangent Casino</h3>
+						<!-- <img src="/images/WildTangentHeader.png"/> -->
+					</div>
+					<div class="flex-wrap">
+						<div class="section-light section-2 no-overflow proj bg-cover bg-spellslingers">
+							<h3>Spell Slingers</h3>
+							<!-- <img src="/images/WildTangentHeader.png"/> -->
+						</div>
+						<div class="section-light section-2 no-overflow proj bg-cover bg-stellarfortune">
+							<h3>Stellar Fortune</h3>
+							<!-- <img src="/images/WildTangentHeader.png"/> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- RESUME -->
+			<div id="resume">
+				<img class="section-header" src ="/images/header_resume.png" alt="Resume"/>
+				<div class="banner-red border-bottom">
+					<p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
+				</div>
+				<div class="section-full-dark">
+					<div id="lang-soft-edu">
+						<div class="section-3">
+							<div class="icon">
+								<i class="fas fa-code"></i>
+							</div> 
+							<h4>Languages</h4>
+							<div class="flex-wrap chip-wrap">
+								<div class="chip">
+									<div class="chip-tag"><strong>Markup</strong></div>
+									<div class="chip-body">HTML5</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Markup</strong></div>
+									<div class="chip-body">CSS3</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Script</strong></div>
+									<div class="chip-body">Javascript ES6</div>
+									<!-- <div class="chip-tag tag-right tag-engine"></div> -->
+
+								</div>
+							</div>
+							<h4>Frameworks, Libraries, & Tools</h4>
+							<div class="flex-wrap chip-wrap">
+								<div class="chip">
+									<div class="chip-tag"><strong>Frame</strong></div>
+									<div class="chip-body">Express</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Runtime Env</strong></div>
+									<div class="chip-body">Node.js</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+							</div>
+						</div>
+						<div class="section-3">
+							<div class="icon">
+								<i class="fas fa-desktop"></i>
+							</div> 
+							<h4>Software</h4>
+							<div class="flex-wrap chip-wrap">
+								<div class="chip">
+									<div class="chip-tag"><strong>Art</strong></div>
+									<div class="chip-body">Adobe Photoshop</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Art</strong></div>
+									<div class="chip-body">Adobe Illustrator</div>
+									<!-- <div class="chip-tag tag-right tag-art"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Anim</strong></div>
+									<div class="chip-body">Adobe After Effects</div>
+									<!-- <div class="chip-tag tag-right tag-anim"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Proto</strong></div>
+									<div class="chip-body">Proto.io</div>
+									<!-- <div class="chip-tag tag-right tag-proto"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Game Engine</strong></div>
+									<div class="chip-body">Unity3D</div>
+									<!-- <div class="chip-tag tag-right tag-proto"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Organize</strong></div>
+									<div class="chip-body">Trello</div>
+									<!-- <div class="chip-tag tag-right tag-org"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>VCS</strong></div>
+									<div class="chip-body">Perforce</div>
+									<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>VCS</strong></div>
+									<div class="chip-body">Git</div>
+									<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
+								</div>
+							</div>
+						</div>
+						<div class="section-3">
+							<div class="icon">
+								<i class="fas fa-graduation-cap"></i>
+							</div> 
+							<h4>Education</h4>
+							<h5><i class="fas fa-paw"></i> Ohio University <em>(2009 - 2013)</em></h5>
+							<div class="flex-wrap chip-wrap">
+								<div class="chip">
+									<div class="chip-tag"><strong>B.S.</strong></div>
+									<div class="chip-body">Digital Media: Games and Animation</div>
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Minor</strong></div>
+									<div class="chip-body">Computer Science</div>
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>Certificate</strong></div>
+									<div class="chip-body">Chinese Language</div>
+								</div>
+							</div>
+							<!-- <h5>Projects of Note</h5>
+							<div class="chip-wrap">
+								<div class="chip">
+									<div class="chip-tag"><strong>SunSat (2011)</strong></div>
+									<div class="chip-body">presented at ISDC 2011 in Huntsville, AL</div>
+								</div>
+								<div class="chip">
+									<div class="chip-tag"><strong>SunSat (2012)</strong></div>
+									<div class="chip-body">presented at ISDC 2012 in Washington, D.C.</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+					<div class="section-1 column">
+						<div class="banner-red">
+							<h4>Work Experience</h4>
+						</div>
+						<div class="work">
+							<div class="work-section company bg-cover bg-freelance">
+								<h4>Freelance (Various Clients)</h4>
+								<div class="img-icon-wrap">
+									<img class="img-icon" src="/images/Signature.png"/>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>UI/UX Designer or Illustrator</p>
+								<p><span class="title">Location | </span>Seattle, WA / Remote</p>
+								<p><span class="title">Duration | </span>02/18 to present</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Overseeing early app UI/UX design process</p>
+								<p>Illustrating both professional and personal images</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<p>Name</p>
+								<div class="project">
+								</div>
+							</div>
+						</div>
+
+						<div class="work">
+							<div class="work-section company bg-cover bg-cake-golem">
+								<h4>Cake Golem Productions & Legacy Game Systems</h4>
+								<div class="img-icon-2-co-wrap">
+									<div class="img-icon-wrap">
+										<img class="img-icon" src="/images/CompanyLogos/CakeGolemProductions.png"/>
+									</div>
+									<i class="fas fa-plus"></i>
+									<div class="img-icon-wrap">
+										<img class="img-icon" src="/images/CompanyLogos/LGS.png"/>
+									</div>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>UI/UX Designer</p>
+								<p><span class="title">Location | </span>Seattle, WA / Remote</p>
+								<p><span class="title">Duration | </span>12/17 to 02/18</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Handled UI asset creation for a mobile AR game</p>
+								<p>Guided UX design with wireframes, mockups, and prototypes</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<p>SpellSlingers</p>
+								<div class="project">
+								</div>
+							</div>
+						</div>
+
+						<div class="work">
+							<div class="work-section company bg-cover bg-wildtangent">
+								<h4>WildTangent Studios</h4>
+								<div class="img-icon-wrap">
+									<img class="img-icon" style="height: 65px; width: 195px; margin-left: -75px;" src="/images/CompanyLogos/WTStudios.jpg"/>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>UI/UX Artist</p>
+								<p><span class="title">Location | </span>Seattle, WA</p>
+								<p><span class="title">Duration | </span>02/16 to 09/16</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Ensured assets met UX and performance specs in Unity (collaborating with engineers and designers)</p>
+								<p>Designed UI assets; built and animated them in Unity</p>
+								<p>Researched plugins, programs, and best practices to improve art pipeline</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<div>
+									<p>WildTangent Casino:</p>
+									<p>Super Sevens Slots & Polar Bowler Slots</p>
+									<div class="project">
+									</div>
+								</div>
+								<div>
+									<p></p>
+									<div class="project">
+									</div>
+								</div>
+								<div class="badge-wrap">
+									<img class="store-btn badge" src="/images/google-play-badge.png"/>
+									<img class="store-btn badge" src="/images/app-store-badge.png"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="work">
+							<div class="work-section company bg-cover bg-g3">
+								<h4>Global Gaming Group</h4>
+								<div class="img-icon-wrap">
+									<img class="img-icon" src="/images/CompanyLogos/G3.png"/>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>Visual Designer</p>
+								<p><span class="title">Location | </span>Las Vegas, NV</p>
+								<p><span class="title">Duration | </span>02/14 to 02/16</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Created vector UI assets for various slot games</p>
+								<p>Animated assets in Adobe After Effects, using Trapcode plugins</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<p>Stellar Fortune</p>
+								<div class="project">
+								</div>
+							</div>
+						</div>
+
+						<div class="work">
+							<div class="work-section company bg-cover bg-spin-for-good">
+								<h4><span class="title">Title | </span>Spin for Good, LLC</h4>
+								<div class="img-icon-wrap">
+									<img class="img-icon" src="/images/CompanyLogos/SpinForGood.png"/>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>2D Artist & Animator</p>
+								<p><span class="title">Location | </span>Las Vegas, NV</p>
+								<p><span class="title">Duration | </span>11/13 to 01/14</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Designed and animated vector and raster UI assets and typography for a charity non-profit slot game</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<p>Spin For Good</p>
+								<div class="project">
+								</div>
+							</div>
+						</div>
+
+						<div class="work">
+							<div class="work-section company bg-cover bg-sunstorm">
+								<h4>Sunstorm Games</h4>
+								<div class="img-icon-wrap">
+									<img class="img-icon" src="/images/CompanyLogos/Sunstorm.png"/>
+								</div>
+							</div>
+							<div class="work-section">
+								<p><span class="title">Title | </span>Vector & Marketing Artist</p>
+								<p><span class="title">Location | </span>Las Vegas, NV</p>
+								<p><span class="title">Duration | </span>05/13 to 10/13</p>
+							</div>
+							<div class="work-section">
+								<h4>Responsibilities</h4>
+								<p>Created vector UI assets, nine-sliced vector character art and exported assets for animation</p>
+								<p>Assembled and polished interstitials and banners for Chartboost, Flurry, the App Store, and Facebook</p>
+							</div>
+							<div class="work-section">
+								<h4>Projects</h4>
+								<div>
+									<p>Sunnyville Pet Salon</p>
+									<div class="project">
+									</div>
+								</div>
+								<div class="badge-wrap">
+									<img class="store-btn badge" src="/images/google-play-badge.png"/>
+									<img class="store-btn badge" src="/images/app-store-badge.png"/>
+								</div>
+								<div>
+									<p>My Pony</p>
+									<div class="project">
+									</div>
+								</div>
+								<div class="badge-wrap">
+									<img class="store-btn badge" src="/images/google-play-badge.png"/>
+									<img class="store-btn badge" src="/images/app-store-badge.png"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner-red">
+							<p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- ABOUT  -->
+			<div id="about">
+				<img class="section-header" src ="/images/header_about.png" alt="About Me"/>
+				<div class="section-full-dark end-margin">
+					<div class="about-head">
+						<img class="artist-img" src="/images/Sam.jpg"/>
+						<div class="about-head-info">
+							<p>Hi! My name is Sam. I'm a UI/UX Designer with four years of experience specializing in game and app development. Steeped in design process best practices, collaborates within and across teams, bridging the gap between aesthetics and technology.</p>
+							<div class="about-head-info-row-2">
+								<div>
+									<h4>Hobbies</h4>
+									<div class="flex-wrap chip-wrap">
+										<div class="chip">
+											<div class="chip-body">Drawing</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Walking</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Cooking</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Watching anime</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Playing Videogames</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Playing Boardgames</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<h4>Favorite Games</h4>
+									<div class="flex-wrap chip-wrap">
+										<div class="chip">
+											<div class="chip-body">Stardew Valley</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Cuphead</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Breath of the Wild</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Seven Wonders</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Betrayal at the House on the Hill</div>
+										</div>
+										<div class="chip">
+											<div class="chip-body">Sushi Go</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>Open to freelance, contract, and fulltime positions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 <% include ./partials/footer.ejs %>
