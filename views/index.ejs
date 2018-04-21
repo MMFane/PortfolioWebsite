@@ -1,7 +1,7 @@
 <% include ./partials/header.ejs %>	
 
-	<div class="nav">
-		<div class=nav-links>
+	<div class="flex-wrap nav">
+		<div class="flex-wrap nav-links">
 			<a class="nav-item" href="/#projects">Projects</a>
 			<a class="nav-item" href="/#resume">Resumé</a>
 			<div class="nav-brand">
@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="grid">
-		<header class="header">
+		<header class="flex-col header">
 			<div>
 				<img class="signature" src="/images/Signature.png"/>
 			</div>
@@ -27,16 +27,16 @@
 				<img class="section-header" src ="/images/header_projects.png"/>
 					<!-- <h3>Projects</h3> -->
 				<div class="section-card">
-					<div class="section-1 no-overflow bg-cover bg-wildtangent-casino">
+					<div class="flex-wrap proj-main no-overflow bg-cover bg-wildtangent-casino">
 						<h3>WildTangent Casino</h3>
 						<!-- <img src="/images/WildTangentHeader.png"/> -->
 					</div>
 					<div class="flex-wrap">
-						<div class="section-light section-2 no-overflow proj bg-cover bg-spellslingers">
+						<div class="flex-wrap flex-section proj-sub no-overflow bg-cover bg-spellslingers">
 							<h3>Spell Slingers</h3>
 							<!-- <img src="/images/WildTangentHeader.png"/> -->
 						</div>
-						<div class="section-light section-2 no-overflow proj bg-cover bg-stellarfortune">
+						<div class="flex-wrap flex-section proj-sub no-overflow bg-cover bg-stellarfortune">
 							<h3>Stellar Fortune</h3>
 							<!-- <img src="/images/WildTangentHeader.png"/> -->
 						</div>
@@ -50,317 +50,303 @@
 				<div class="banner-red border-bottom">
 					<p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
 				</div>
-				<div class="section-full-dark">
-					<div id="lang-soft-edu">
-						<div class="section-3">
-							<div class="icon">
-								<i class="fas fa-code"></i>
-							</div> 
-							<h4>Languages</h4>
-							<div class="flex-wrap chip-wrap">
-								<div class="chip">
-									<div class="chip-tag"><strong>Markup</strong></div>
-									<div class="chip-body">HTML5</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Markup</strong></div>
-									<div class="chip-body">CSS3</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Script</strong></div>
-									<div class="chip-body">Javascript ES6</div>
-									<!-- <div class="chip-tag tag-right tag-engine"></div> -->
+				<div id="lang-soft-edu" class="flex-wrap">
+					<div class="flex-section">
+						<div class="icon-circle">
+							<i class="fas fa-code"></i>
+						</div> 
+						<h4>Languages</h4>
+						<div class="flex-wrap chip-wrap">
+							<div class="chip">
+								<div class="chip-tag"><strong>Markup</strong></div>
+								<div class="chip-body">HTML5</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Markup</strong></div>
+								<div class="chip-body">CSS3</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Script</strong></div>
+								<div class="chip-body">Javascript ES6</div>
+								<!-- <div class="chip-tag tag-right tag-engine"></div> -->
 
-								</div>
-							</div>
-							<h4>Frameworks, Libraries, & Tools</h4>
-							<div class="flex-wrap chip-wrap">
-								<div class="chip">
-									<div class="chip-tag"><strong>Frame</strong></div>
-									<div class="chip-body">Express</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Runtime Env</strong></div>
-									<div class="chip-body">Node.js</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
 							</div>
 						</div>
-						<div class="section-3">
-							<div class="icon">
-								<i class="fas fa-desktop"></i>
-							</div> 
-							<h4>Software</h4>
-							<div class="flex-wrap chip-wrap">
-								<div class="chip">
-									<div class="chip-tag"><strong>Art</strong></div>
-									<div class="chip-body">Adobe Photoshop</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Art</strong></div>
-									<div class="chip-body">Adobe Illustrator</div>
-									<!-- <div class="chip-tag tag-right tag-art"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Anim</strong></div>
-									<div class="chip-body">Adobe After Effects</div>
-									<!-- <div class="chip-tag tag-right tag-anim"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Proto</strong></div>
-									<div class="chip-body">Proto.io</div>
-									<!-- <div class="chip-tag tag-right tag-proto"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Game Engine</strong></div>
-									<div class="chip-body">Unity3D</div>
-									<!-- <div class="chip-tag tag-right tag-proto"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Organize</strong></div>
-									<div class="chip-body">Trello</div>
-									<!-- <div class="chip-tag tag-right tag-org"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>VCS</strong></div>
-									<div class="chip-body">Perforce</div>
-									<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>VCS</strong></div>
-									<div class="chip-body">Git</div>
-									<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
-								</div>
+						<h4>Frameworks, Libraries, & Tools</h4>
+						<div class="flex-wrap chip-wrap">
+							<div class="chip">
+								<div class="chip-tag"><strong>Frame</strong></div>
+								<div class="chip-body">Express</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
 							</div>
-						</div>
-						<div class="section-3">
-							<div class="icon">
-								<i class="fas fa-graduation-cap"></i>
-							</div> 
-							<h4>Education</h4>
-							<h5><i class="fas fa-paw"></i> Ohio University <em>(2009 - 2013)</em></h5>
-							<div class="flex-wrap chip-wrap">
-								<div class="chip">
-									<div class="chip-tag"><strong>B.S.</strong></div>
-									<div class="chip-body">Digital Media: Games and Animation</div>
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Minor</strong></div>
-									<div class="chip-body">Computer Science</div>
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>Certificate</strong></div>
-									<div class="chip-body">Chinese Language</div>
-								</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Runtime Env</strong></div>
+								<div class="chip-body">Node.js</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
 							</div>
-							<!-- <h5>Projects of Note</h5>
-							<div class="chip-wrap">
-								<div class="chip">
-									<div class="chip-tag"><strong>SunSat (2011)</strong></div>
-									<div class="chip-body">presented at ISDC 2011 in Huntsville, AL</div>
-								</div>
-								<div class="chip">
-									<div class="chip-tag"><strong>SunSat (2012)</strong></div>
-									<div class="chip-body">presented at ISDC 2012 in Washington, D.C.</div>
-								</div>
-							</div> -->
 						</div>
 					</div>
-					<div class="section-1 column">
-						<div class="banner-red">
-							<h4>Work Experience</h4>
+					<div class="flex-section">
+						<div class="icon-circle">
+							<i class="fas fa-desktop"></i>
+						</div> 
+						<h4>Software</h4>
+						<div class="flex-wrap chip-wrap">
+							<div class="chip">
+								<div class="chip-tag"><strong>Art</strong></div>
+								<div class="chip-body">Adobe Photoshop</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Art</strong></div>
+								<div class="chip-body">Adobe Illustrator</div>
+								<!-- <div class="chip-tag tag-right tag-art"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Anim</strong></div>
+								<div class="chip-body">Adobe After Effects</div>
+								<!-- <div class="chip-tag tag-right tag-anim"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Proto</strong></div>
+								<div class="chip-body">Proto.io</div>
+								<!-- <div class="chip-tag tag-right tag-proto"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Game Engine</strong></div>
+								<div class="chip-body">Unity3D</div>
+								<!-- <div class="chip-tag tag-right tag-proto"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Organize</strong></div>
+								<div class="chip-body">Trello</div>
+								<!-- <div class="chip-tag tag-right tag-org"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>VCS</strong></div>
+								<div class="chip-body">Perforce</div>
+								<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
+							</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>VCS</strong></div>
+								<div class="chip-body">Git</div>
+								<!-- <div class="chip-tag tag-right tag-ctrl"></div> -->
+							</div>
 						</div>
-						<div class="work">
-							<div class="work-section company bg-cover bg-freelance">
-								<h4>Freelance (Various Clients)</h4>
-								<div class="img-icon-wrap">
-									<img class="img-icon" src="/images/Signature.png"/>
-								</div>
+					</div>
+					<div class="flex-section">
+						<div class="icon-circle">
+							<i class="fas fa-graduation-cap"></i>
+						</div> 
+						<h4>Education</h4>
+						<h5><i class="fas fa-paw"></i> Ohio University <em>(2009 - 2013)</em></h5>
+						<div class="flex-wrap chip-wrap">
+							<div class="chip">
+								<div class="chip-tag"><strong>B.S.</strong></div>
+								<div class="chip-body">Digital Media: Games and Animation</div>
 							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>UI/UX Designer or Illustrator</p>
-								<p><span class="title">Location | </span>Seattle, WA / Remote</p>
-								<p><span class="title">Duration | </span>02/18 to present</p>
+							<div class="chip">
+								<div class="chip-tag"><strong>Minor</strong></div>
+								<div class="chip-body">Computer Science</div>
 							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Overseeing early app UI/UX design process</p>
-								<p>Illustrating both professional and personal images</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<p>Name</p>
-								<div class="project">
-								</div>
+							<div class="chip">
+								<div class="chip-tag"><strong>Certificate</strong></div>
+								<div class="chip-body">Chinese Language</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="flex-wrap flex-col">
+					<div class="banner-red">
+						<h4>Work Experience</h4>
+					</div>
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-freelance">
+							<h4>Freelance (Various Clients)</h4>
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="/images/Signature.png"/>
+							</div>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>UI/UX Designer or Illustrator</p>
+							<p><span class="title">Location | </span>Seattle, WA / Remote</p>
+							<p><span class="title">Duration | </span>02/18 to present</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Overseeing early app UI/UX design process</p>
+							<p>Illustrating both professional and personal images</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<p>Name</p>
+							<div class="company-proj">
+							</div>
+						</div>
+					</div>
 
-						<div class="work">
-							<div class="work-section company bg-cover bg-cake-golem">
-								<h4>Cake Golem Productions & Legacy Game Systems</h4>
-								<div class="img-icon-2-co-wrap">
-									<div class="img-icon-wrap">
-										<img class="img-icon" src="/images/CompanyLogos/CakeGolemProductions.png"/>
-									</div>
-									<i class="fas fa-plus"></i>
-									<div class="img-icon-wrap">
-										<img class="img-icon" src="/images/CompanyLogos/LGS.png"/>
-									</div>
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-cake-golem">
+							<h4>Cake Golem Productions & Legacy Game Systems</h4>
+							<div class="flex-wrap company-logo-double">
+								<div class="company-logo-wrap">
+									<img class="company-logo" src="/images/CompanyLogos/CakeGolemProductions.png"/>
 								</div>
-							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>UI/UX Designer</p>
-								<p><span class="title">Location | </span>Seattle, WA / Remote</p>
-								<p><span class="title">Duration | </span>12/17 to 02/18</p>
-							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Handled UI asset creation for a mobile AR game</p>
-								<p>Guided UX design with wireframes, mockups, and prototypes</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<p>SpellSlingers</p>
-								<div class="project">
+								<i class="fas fa-plus"></i>
+								<div class="company-logo-wrap">
+									<img class="company-logo" src="/images/CompanyLogos/LGS.png"/>
 								</div>
 							</div>
 						</div>
-
-						<div class="work">
-							<div class="work-section company bg-cover bg-wildtangent">
-								<h4>WildTangent Studios</h4>
-								<div class="img-icon-wrap">
-									<img class="img-icon" style="height: 65px; width: 195px; margin-left: -75px;" src="/images/CompanyLogos/WTStudios.jpg"/>
-								</div>
-							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>UI/UX Artist</p>
-								<p><span class="title">Location | </span>Seattle, WA</p>
-								<p><span class="title">Duration | </span>02/16 to 09/16</p>
-							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Ensured assets met UX and performance specs in Unity (collaborating with engineers and designers)</p>
-								<p>Designed UI assets; built and animated them in Unity</p>
-								<p>Researched plugins, programs, and best practices to improve art pipeline</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<div>
-									<p>WildTangent Casino:</p>
-									<p>Super Sevens Slots & Polar Bowler Slots</p>
-									<div class="project">
-									</div>
-								</div>
-								<div>
-									<p></p>
-									<div class="project">
-									</div>
-								</div>
-								<div class="badge-wrap">
-									<img class="store-btn badge" src="/images/google-play-badge.png"/>
-									<img class="store-btn badge" src="/images/app-store-badge.png"/>
-								</div>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>UI/UX Designer</p>
+							<p><span class="title">Location | </span>Seattle, WA / Remote</p>
+							<p><span class="title">Duration | </span>12/17 to 02/18</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Handled UI asset creation for a mobile AR game</p>
+							<p>Guided UX design with wireframes, mockups, and prototypes</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<p>SpellSlingers</p>
+							<div class="company-proj">
 							</div>
 						</div>
+					</div>
 
-						<div class="work">
-							<div class="work-section company bg-cover bg-g3">
-								<h4>Global Gaming Group</h4>
-								<div class="img-icon-wrap">
-									<img class="img-icon" src="/images/CompanyLogos/G3.png"/>
-								</div>
-							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>Visual Designer</p>
-								<p><span class="title">Location | </span>Las Vegas, NV</p>
-								<p><span class="title">Duration | </span>02/14 to 02/16</p>
-							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Created vector UI assets for various slot games</p>
-								<p>Animated assets in Adobe After Effects, using Trapcode plugins</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<p>Stellar Fortune</p>
-								<div class="project">
-								</div>
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-wildtangent">
+							<h4>WildTangent Studios</h4>
+							<div class="company-logo-wrap">
+								<img style="height: 65px; width: 195px; margin-left: -75px;" src="/images/CompanyLogos/WTStudios.jpg"/>
 							</div>
 						</div>
-
-						<div class="work">
-							<div class="work-section company bg-cover bg-spin-for-good">
-								<h4><span class="title">Title | </span>Spin for Good, LLC</h4>
-								<div class="img-icon-wrap">
-									<img class="img-icon" src="/images/CompanyLogos/SpinForGood.png"/>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>UI/UX Artist</p>
+							<p><span class="title">Location | </span>Seattle, WA</p>
+							<p><span class="title">Duration | </span>02/16 to 09/16</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Ensured assets met UX and performance specs in Unity (collaborating with engineers and designers)</p>
+							<p>Designed UI assets; built and animated them in Unity</p>
+							<p>Researched plugins, programs, and best practices to improve art pipeline</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<div>
+								<p>WildTangent Casino:</p>
+								<p>Super Sevens Slots & Polar Bowler Slots</p>
+								<div class="company-proj">
 								</div>
 							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>2D Artist & Animator</p>
-								<p><span class="title">Location | </span>Las Vegas, NV</p>
-								<p><span class="title">Duration | </span>11/13 to 01/14</p>
-							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Designed and animated vector and raster UI assets and typography for a charity non-profit slot game</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<p>Spin For Good</p>
-								<div class="project">
+							<div>
+								<p></p>
+								<div class="company-proj">
 								</div>
+							</div>
+							<div class="flex-wrap store-badge-wrap">
+								<img class="store-badge" src="/images/google-play-badge.png"/>
+								<img class="store-badge" src="/images/app-store-badge.png"/>
 							</div>
 						</div>
+					</div>
 
-						<div class="work">
-							<div class="work-section company bg-cover bg-sunstorm">
-								<h4>Sunstorm Games</h4>
-								<div class="img-icon-wrap">
-									<img class="img-icon" src="/images/CompanyLogos/Sunstorm.png"/>
-								</div>
-							</div>
-							<div class="work-section">
-								<p><span class="title">Title | </span>Vector & Marketing Artist</p>
-								<p><span class="title">Location | </span>Las Vegas, NV</p>
-								<p><span class="title">Duration | </span>05/13 to 10/13</p>
-							</div>
-							<div class="work-section">
-								<h4>Responsibilities</h4>
-								<p>Created vector UI assets, nine-sliced vector character art and exported assets for animation</p>
-								<p>Assembled and polished interstitials and banners for Chartboost, Flurry, the App Store, and Facebook</p>
-							</div>
-							<div class="work-section">
-								<h4>Projects</h4>
-								<div>
-									<p>Sunnyville Pet Salon</p>
-									<div class="project">
-									</div>
-								</div>
-								<div class="badge-wrap">
-									<img class="store-btn badge" src="/images/google-play-badge.png"/>
-									<img class="store-btn badge" src="/images/app-store-badge.png"/>
-								</div>
-								<div>
-									<p>My Pony</p>
-									<div class="project">
-									</div>
-								</div>
-								<div class="badge-wrap">
-									<img class="store-btn badge" src="/images/google-play-badge.png"/>
-									<img class="store-btn badge" src="/images/app-store-badge.png"/>
-								</div>
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-g3">
+							<h4>Global Gaming Group</h4>
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="/images/CompanyLogos/G3.png"/>
 							</div>
 						</div>
-
-						<div class="banner-red">
-							<p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>Visual Designer</p>
+							<p><span class="title">Location | </span>Las Vegas, NV</p>
+							<p><span class="title">Duration | </span>02/14 to 02/16</p>
 						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Created vector UI assets for various slot games</p>
+							<p>Animated assets in Adobe After Effects, using Trapcode plugins</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<p>Stellar Fortune</p>
+							<div class="company-proj">
+							</div>
+						</div>
+					</div>
 
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-spin-for-good">
+							<h4>Spin for Good, LLC</h4>
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="/images/CompanyLogos/SpinForGood.png"/>
+							</div>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>2D Artist & Animator</p>
+							<p><span class="title">Location | </span>Las Vegas, NV</p>
+							<p><span class="title">Duration | </span>11/13 to 01/14</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Designed and animated vector and raster UI assets and typography for a charity non-profit slot game</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<p>Spin For Good</p>
+							<div class="company-proj">
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-wrap company">
+						<div class="flex-wrap flex-section flex-col company-section company-img bg-cover bg-sunstorm">
+							<h4>Sunstorm Games</h4>
+							<div class="company-logo-wrap">
+								<img class="company-logo" src="/images/CompanyLogos/Sunstorm.png"/>
+							</div>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section align-left padding-left">
+							<p><span class="title">Title | </span>Vector & Marketing Artist</p>
+							<p><span class="title">Location | </span>Las Vegas, NV</p>
+							<p><span class="title">Duration | </span>05/13 to 10/13</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Responsibilities</h4>
+							<p>Created vector UI assets, nine-sliced vector character art and exported assets for animation</p>
+							<p>Assembled and polished interstitials and banners for Chartboost, Flurry, the App Store, and Facebook</p>
+						</div>
+						<div class="flex-wrap flex-section flex-col company-section">
+							<h4>Projects</h4>
+							<div>
+								<p>Sunnyville Pet Salon</p>
+								<div class="company-proj">
+								</div>
+							</div>
+							<div class="flex-wrap store-badge-wrap">
+								<img class="store-badge" src="/images/google-play-badge.png"/>
+								<img class="store-badge" src="/images/app-store-badge.png"/>
+							</div>
+							<div>
+								<p>My Pony</p>
+								<div class="company-proj">
+								</div>
+							</div>
+							<div class="flex-wrap store-badge-wrap">
+								<img class="store-badge" src="/images/google-play-badge.png"/>
+								<img class="store-badge" src="/images/app-store-badge.png"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="banner-red">
+						<p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
 					</div>
 				</div>
 			</div>
@@ -368,15 +354,15 @@
 			<!-- ABOUT  -->
 			<div id="about">
 				<img class="section-header" src ="/images/header_about.png" alt="About Me"/>
-				<div class="section-full-dark end-margin">
-					<div class="about-head">
+				<div class="banner-red end-margin">
+					<div class="flex-wrap">
 						<img class="artist-img" src="/images/Sam.jpg"/>
-						<div class="about-head-info">
+						<div class="flex-section flex-col">
 							<p>Hi! My name is Sam. I'm a UI/UX Designer with four years of experience specializing in game and app development. Steeped in design process best practices, collaborates within and across teams, bridging the gap between aesthetics and technology.</p>
-							<div class="about-head-info-row-2">
+							<div class="flex-wrap">
 								<div>
 									<h4>Hobbies</h4>
-									<div class="flex-wrap chip-wrap">
+									<div class="flex-wrap flex-section chip-wrap">
 										<div class="chip">
 											<div class="chip-body">Drawing</div>
 										</div>
@@ -399,7 +385,7 @@
 								</div>
 								<div>
 									<h4>Favorite Games</h4>
-									<div class="flex-wrap chip-wrap">
+									<div class="flex-wrap flex-section chip-wrap">
 										<div class="chip">
 											<div class="chip-body">Stardew Valley</div>
 										</div>

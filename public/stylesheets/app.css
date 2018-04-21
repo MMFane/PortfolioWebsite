@@ -60,17 +60,16 @@ h5 {
 	grid-area: header;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	background-color: #b31c1b;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-	padding: 50px 0;
+	padding: 2em 0;
 }
 
 .signature {
 	width: 200px;
 	height: 200px;
-	margin: 25px;
+	margin: 1.5em;
 }
 
 /* 	////////////////////////////////////////////
@@ -80,8 +79,6 @@ h5 {
 .nav {
 	font-size: 0.75em;
 	position: fixed;
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
 	background-color: #8e1615;
@@ -90,41 +87,30 @@ h5 {
 
 .nav-item {
 	color: #dbc5c5;
-	margin: 8px 8px;
-	padding: 7px;
-	/*border-right: 1px solid rgba(0, 0, 0, 0.25);*/
+	margin: 0.5em 0.5em;
+	padding: 0.5em;
 	text-decoration: none;
 	border: 1px solid #dbc5c5;
 }
 
-/*.nav-item:first-of-type {
-	border-left: 1px solid rgba(0, 0, 0, 0.25);
-}*/
-
 .nav-item:hover {
 	color: white;
-	/*background-color: #b31c1b;*/
-	/*border-right: 1px solid rgba(0, 0, 0, 0.25);*/
+	border-color: white;
 }
 
 .nav-item:active {
-	color: #6d1110;
-	/*color: #b2a0a0;*/
-	/*background-color: #6d1110;*/
+	color: #ad9c9c;
+	border-color: #ad9c9c;
+	background-color: #6d1110;
 }
-
-/*.nav-item:nth-of-type(2n-1) {
-	border-left: 1px solid rgba(0, 0, 0, 0.25);
-}*/
 
 .nav-brand img {
 	height: 50px;
 	width: 50px;
-	margin: 6px 8px;
+	margin: 0.5em 0.5em;
 }
 
 .nav-links {
-	display: flex;
 	align-items: center;
 }
 
@@ -141,97 +127,184 @@ h5 {
 .main {
 	grid-area: main;
 	display: grid;
-	grid-gap: 10px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
 }
 
-/* 	////////////////////////////////////////////
-	BODY SECTIONS - 3 styles - card, dark, and 
-	light to alternate as needed.
-	////////////////////////////////////////////	*/ 
-
-.flex-wrap {
-	display: flex;
-	flex-wrap: wrap;
+.section-header {
+	width: 175px;
+	margin: 0 auto 1.25em auto;
 }
 
-.proj {
+#projects, #resume, #about {
+	margin-top: 150px;
+	grid-column: 1 / span 3;
+}
+
+/* 	////////////////////////////////////////////
+	PROJECTS SECTION - 1 main project, 2 - 3 sub projects
+	////////////////////////////////////////////	*/ 
+
+.proj-main {
+	min-height: 600px;
+}
+
+.proj-sub {
 	height: 400px;
+	align-content: center;
+	padding: 1.5em;
+	min-width: 290px;
 }
 
 .section-card {
 	grid-column: 1 / span 3;
-	margin:0 auto;
-	border: 1px solid #e8e8e8;
+	margin: 0 auto;
 	border-radius: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
 	width: 90%;
-	max-width: 1800px;
+	max-width: 1400px;
 	overflow: hidden;
 }
 
-.section-header {
-	width: 175px;
-	margin: 0 auto 25px auto;
-}
+/* 	////////////////////////////////////////////
+	RESUME SECTIONS - languages/software/education & companies
+	////////////////////////////////////////////	*/ 
 
-.section-light {
-	margin: 0;
-	padding: 25px;
+#lang-soft-edu {
+	padding: 50px 7%;
 	background-color: #e5e0e0;
+	background-image: url(/images/jesus-kiteque-224069-unsplash.png);
+	background-position: 0 75%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.section-dark {
+#lang-soft-edu h4,{
+	color: white;
+	margin-top: 1.5em;
+}
+
+.icon-circle {
+	display: inline-block;
+	border-radius: 50%;
+	padding: 2.5em;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.icon-circle i {
+	color: #ceb6b6;
+	font-size: 2.5em;
+}
+
+.company-logo-wrap {
+	border-radius: 50%;
+	display: inline;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.company-logo-double {
+	justify-content: space-around;
+}
+
+.company-logo-double i {
+	font-size: 2.5em;
+	align-self: center;
+}
+
+.company-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.company {
+	justify-content: space-between;
+	background-color: #b31c1b;
+	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
+}
+
+.company-section {
+	padding: 2em;
 	margin: 0;
-	padding: 25px;
+	justify-content: center;
 }
 
-.section-full-dark {
-	grid-column: 1 / span 3;
-	background-color: #f9f7f7;
+.company-section p {
+	color: white;
 }
 
-.section-full-light {
-	grid-column: 1 / span 3;
-	padding: 25px;
-	margin-top: 150px;
+.company-img {
+	background-color: #a97e7e;
+	min-width: 225px;
 }
 
-.section-1 {
+.company-proj {
+	background-color: red;
 	width: 100%;
-	background-color: #efeded;
-	/*border-bottom: 2px solid rgba(255, 255, 255, 1);*/
-	min-height: 600px;
+	height: 100px;
+}
+
+.store-badge {
+	width: auto;
+	height: 40px;
+	padding: 0 4px;
+}
+
+.store-badge-wrap {
+	justify-content: center;
+	margin: 10px 0;
+}
+
+.banner-red {
+	color: #dbc5c5;
 	display: flex;
 	align-content: center;
+	justify-content: center;
+	min-height: 50px;
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	background-color: #b31c1b;
 }
 
-.section-2 {
-	display: flex;
-	align-content: center;
-	flex: 1;
-	min-width: 290px;
+.banner-red h4 {
+	color: white;
+	margin: 1.25em;
 }
 
-.section-2:first-of-type {
-	/*border-right: 2px solid rgba(255, 255, 255, 1);*/
+.banner-red span {
+	margin-left: 10px;
 }
 
-.section-3 {
-	padding: 50px 50px;
-	flex: 1;
+.banner-red a {
+	color: white;
+	text-decoration: none;
 }
 
-/*.section-3:nth-of-type(3n-2) {
-	border-right: 1px solid rgba(0, 0, 0, 0.15);
+.banner-red a:hover {
+	color: black;
 }
 
-.section-3:nth-of-type(3n) {
-	border-left: 1px solid rgba(0, 0, 0, 0.15);
+.border-bottom {
+	border-top: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
-*/
+
+/* 	////////////////////////////////////////////
+	ABOUT SECTION - info about and image of me		  
+	////////////////////////////////////////////	*/
+
+.artist-img {
+	display: block;
+	max-width: 375px;
+	max-height: 375px;
+	width: auto;
+	height: auto;
+}
+
 /* 	////////////////////////////////////////////
 	CHIPS - small bits of information with a tag
 	i.e. software or languages I know 		  
@@ -258,289 +331,11 @@ h5 {
 	border-bottom-left-radius: 6px;
 	padding: 10px;	
 	width: auto;
-	/*border: 1px solid rgba(0, 0, 0, 0.15);*/
 }
 
 .chip-wrap {
 	justify-content: center;
 }
-
-.tag-art {
-	background-color: #ee2524;
-}
-
-.tag-anim {
-	background-color: #f76911;
-}
-
-.tag-ctrl {
-	background-color: #7c10f7;
-}
-
-.tag-engine {
-	background-color: #4e52ce;
-}
-
-.tag-org {
-	background-color: #ba3cd1
-}
-
-.tag-proto {
-	background-color: #4ee5d8;
-}
-
-/*.tag-right {
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
-	opacity: 0.75;
-	width: 1px;
-}*/
-
-/* 	////////////////////////////////////////////
-	FOOTER - contact info and copyright claim
-	////////////////////////////////////////////	*/
-
-.contact {
-	grid-area: contact;
-	color: #dbc5c5;
-	background-color: #b31c1b;
-	padding: 15px;
-	border-top: 1px solid #850606;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
-}
-
-.contact-content {
-	margin: 0 auto;
-	justify-content: center;
-}
-
-.icon-link {
-	color: #dbc5c5;
-}
-
-.icon-link:hover {
-	color: white;
-}
-
-.icon-link:active {
-	color: #6d1110;
-}
-
-.phone {
-	align-items: center;
-	justify-content: center;
-}
-
-.contact i {
-	padding: 0 10px;
-}
-
-.footer {
-	grid-area: footer;
-	color: #ee2524;
-	background-color: #850606;
-	padding: 14px 0;
-}
-
-
-/* 	////////////////////////////////////////////
-	HELPER CLASSES - small, generic, reusable
-	////////////////////////////////////////////	*/
-
-.end-margin {
-	margin-bottom: 150px;
-}
-
-.no-overflow {
-	overflow: hidden;
-}
-
-.margin {
-	margin-top: 20px;
-}
-
-.column {
-	flex-direction: column;
-}
-
-.flex {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-
-
-
-
-/* UNSORTED*/
-
-.company-logo img {
-	margin: 0 10px;
-	max-width: 100px;
-}
-
-.icon {
-	border-radius: 50%;
-	display: inline-block;
-	padding: 40px;
-	/*border: 2px solid white;*/
-	background-color: white;
-	margin: 0 auto;
-}
-
-.icon i {
-	/*color: white;*/
-	color: #ceb6b6;
-	font-size: 2.5em;
-}
-
-.img-icon-wrap {
-	border-radius: 50%;
-	display: inline;
-	width: 100px;
-	height: 100px;
-	background-color: white;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.img-icon-2-co-wrap {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.img-icon-2-co-wrap i {
-	color: white;
-	font-size: 2.5em;
-	align-self: center;
-}
-
-.img-icon {
-	width: 100px;
-	height: 100px;
-}
-
-.work {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	/*border-bottom: 1px solid rgba(0, 0, 0, 0.25);*/
-	/*padding: 50px 3%;*/
-	background-color: #b31c1b;
-	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
-}
-
-.work-section {
-	padding: 50px;
-	margin: 0;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.work-section p {
-	color: white;
-}
-
-.company {
-	background-color: #a97e7e;
-	min-width: 225px;
-}
-
-.project {
-	background-color: red;
-	width: 100%;
-	height: 100px;
-}
-
-#projects, #resume, #about {
-	margin-top: 150px;
-	grid-column: 1 / span 3;
-}
-
-#lang-soft-edu {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 7%;
-	background-color: #e5e0e0;
-	background-image: url(/images/jesus-kiteque-224069-unsplash.png);
-	background-position: 0 75%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*border-bottom: 1px solid rgba(0, 0, 0, 0.25);*/
-}
-
-#lang-soft-edu h4,{
-	color: white;
-	margin-top: 1.5em;
-}
-
-.banner-red {
-	color: #dbc5c5;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	min-height: 50px;
-	text-align: center;
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
-	background-color: #b31c1b;
-}
-
-.border-bottom {
-	border-top: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.banner-red h4 {
-	color: white;
-	margin: 1.25em;
-}
-
-.banner-red span {
-	margin-left: 10px;
-}
-
-.banner-red a {
-	color: white;
-	text-decoration: none;
-}
-
-.download a:hover {
-	color: black;
-}
-
-.about-head {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.about-head-info {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-}
-.about-head-info-row-2 {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.about-head-info div {
-	flex: 1;
-}
-
-.artist-img {
-	display: block;
-	max-width: 375px;
-	max-height: 375px;
-	width: auto;
-	height: auto;
-}
-
 
 /* 	////////////////////////////////////////////
 	BACKGROUND IMG CLASSES - for projects and Companies
@@ -591,24 +386,111 @@ h5 {
 	background-image: url(/images/sylvia-yang-409493-unsplash.png);
 }
 
+/* 	////////////////////////////////////////////
+	FOOTER - contact info and copyright claim
+	////////////////////////////////////////////	*/
 
+.contact {
+	grid-area: contact;
+	color: #dbc5c5;
+	background-color: #b31c1b;
+	padding: 15px;
+	border-top: 1px solid #850606;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
 
+.contact-content {
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.icon-link {
+	color: #dbc5c5;
+}
+
+.icon-link:hover {
+	color: white;
+}
+
+.icon-link:active {
+	color: #6d1110;
+}
+
+.phone {
+	align-items: center;
+	justify-content: center;
+}
+
+.contact i {
+	padding: 0 10px;
+}
+
+.footer {
+	grid-area: footer;
+	color: #ee2524;
+	background-color: #850606;
+	padding: 14px 0;
+}
+
+/* 	////////////////////////////////////////////
+	HELPER CLASSES - small, generic, reusable
+	////////////////////////////////////////////	*/
+
+.end-margin {
+	margin-bottom: 150px;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.padding-left {
+	padding-left: 10em;
+}
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-section {
+	flex: 1;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.align-left {
+	text-align: left;
+}
 
 .title {
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-.store-btn {
-	width: auto;
-	height: 40px;
-	padding: 3px;
+/*UNUSED*/
+/*.tag-art {
+	background-color: #ee2524;
 }
 
-.badge-wrap {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	margin: 10px 0;
+.tag-anim {
+	background-color: #f76911;
 }
+
+.tag-ctrl {
+	background-color: #7c10f7;
+}
+
+.tag-engine {
+	background-color: #4e52ce;
+}
+
+.tag-org {
+	background-color: #ba3cd1
+}
+
+.tag-proto {
+	background-color: #4ee5d8;
+}*/
