@@ -174,7 +174,7 @@ h5 {
 	padding: 50px 7%;
 	background-color: #e5e0e0;
 	background-image: url(/images/jesus-kiteque-224069-unsplash.png);
-	background-position: 0 75%;
+	background-position: 50% 80%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -257,6 +257,29 @@ h5 {
 .store-badge-wrap {
 	justify-content: center;
 	margin: 10px 0;
+}
+
+.btn-badge {
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	padding: 0.4em;
+	text-decoration: none;
+}
+
+.btn-badge-first-p {
+	font-size: 0.55em;
+}
+
+.btn-badge i {
+	font-size: 1.5em;
+	display: inline;
+}
+
+.btn-badge p {
+	margin: 0 0 0 0.5em;
+	align-self: center;
 }
 
 .banner-red {
@@ -347,6 +370,11 @@ h5 {
 	background-blend-mode: overlay;
 }	
 
+.bg-proj-small {
+	background-blend-mode: normal;
+	background-position: 50% 35%;
+}
+
 .bg-wildtangent-casino {
 	background-image: url("/images/ProjectHeaders/WildTangent.png");
 	background-blend-mode: normal;
@@ -384,6 +412,41 @@ h5 {
 
 .bg-freelance {
 	background-image: url(/images/sylvia-yang-409493-unsplash.png);
+}
+
+.bg-proj-polarbowler {
+	background-image: url(/images/ProjectHeaders/PolarBowler.png);
+}
+
+.bg-proj-supersevens {
+	background-image: url(/images/ProjectHeaders/SuperSevens.png);
+}
+
+.bg-proj-spellslingers {
+	background-image: url(/images/ProjectHeaders/SpellSlingers_small.png);
+	background-position: 50% 20%;
+}
+
+.bg-proj-sunnyvillepetsalon {
+	background-image: url(/images/ProjectHeaders/SunnyvillePetSalon.png);
+	background-position: 50% 55%;
+}
+
+.bg-proj-mypony {
+	background-image: url(/images/ProjectHeaders/MyPony.png);
+}
+
+.bg-proj-spinforgood {
+	background-image: url(/images/ProjectHeaders/SpinForGood.png);
+}
+
+.bg-proj-stellarfortune {
+	background-image: url(/images/ProjectHeaders/StellarFortune_small.png);
+}
+
+.bg-proj-freelance {
+	background-image: url(/images/ProjectHeaders/Freelance.png);
+	background-position: 50% 0%;
 }
 
 /* 	////////////////////////////////////////////
@@ -440,12 +503,24 @@ h5 {
 	margin-bottom: 150px;
 }
 
+.margin-top-25 {
+	margin-top: 25px;
+}
+
 .no-overflow {
 	overflow: hidden;
 }
 
 .padding-left {
 	padding-left: 10em;
+}
+
+.margin-top-small {
+	margin-top: 0;
+}
+
+.margin-bottom-large {
+	margin-bottom: 1.5em;
 }
 
 .flex-wrap {
@@ -461,6 +536,18 @@ h5 {
 	flex-direction: column;
 }
 
+.flex-center {
+	justify-content: center;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-align-left {
+	align-content: stretch;
+}
+
 .align-left {
 	text-align: left;
 }
@@ -469,6 +556,7 @@ h5 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
+
 
 /*UNUSED*/
 /*.tag-art {
