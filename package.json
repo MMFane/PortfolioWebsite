@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "personal portfolio site",
   "main": "app.js",
-  "dependencies": {
-    "ejs": "^2.5.8",
-    "express": "^4.16.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "author": "Sam Yeager",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "8.11.1"
+  }
 }

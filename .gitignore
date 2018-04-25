@@ -1,2 +1,4 @@
 node_modules/*
 working_images/*
+npm-debug.log
+/*.env
