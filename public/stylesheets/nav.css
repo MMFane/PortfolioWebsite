@@ -1,0 +1,46 @@
+.show-menu {
+    width: 100%;
+    display: none;
+}
+
+.show-menu i {
+    font-size: 2em;
+    align-self: flex-end;
+    padding-right: 25px;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 760px){
+    .nav-links {
+        display: none;
+    }
+
+    .nav-item {
+        width: 100%;
+        display: block;
+        margin: 0;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        line-height: 40px;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .desktop-brand img{
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+    }
+}

@@ -23,6 +23,8 @@ h1 {
 	font-size: 3em;
 	text-transform: uppercase;
 	margin: 0;
+	font-family: "Francois One", sans-serif;
+	letter-spacing: 2px;
 }
 
 h2 {
@@ -34,6 +36,8 @@ h2 {
 
 h3 {
 	font-size: 3em;
+	font-family: "Francois One", sans-serif;
+	letter-spacing: 1px;
 }
 
 .title-card {
