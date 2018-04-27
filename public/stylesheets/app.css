@@ -80,52 +80,6 @@ h5 {
 }
 
 /* 	////////////////////////////////////////////
-	NAV
-	////////////////////////////////////////////	*/ 
-
-.nav {
-	font-size: 0.75em;
-	position: fixed;
-	justify-content: center;
-	width: 100%;
-	background-color: #8e1615;
-	z-index: 2;
-}
-
-.nav-item {
-	color: #dbc5c5;
-	margin: 0.5em 0.5em;
-	padding: 0.5em;
-	text-decoration: none;
-	border: 1px solid #dbc5c5;
-}
-
-.nav-item i:first-of-type {
-	margin-right: 0.5em;
-}
-
-.nav-item:hover {
-	color: white;
-	border-color: white;
-}
-
-.nav-item:active {
-	color: #ad9c9c;
-	border-color: #ad9c9c;
-	background-color: #6d1110;
-}
-
-.nav-brand img {
-	height: 50px;
-	width: 50px;
-	margin: 0.5em 0.5em;
-}
-
-.nav-links {
-	align-items: center;
-}
-
-/* 	////////////////////////////////////////////
 	MAIN - main body content organization in grid
 	////////////////////////////////////////////	*/
 
@@ -150,6 +104,29 @@ h5 {
 #projects, #resume, #about {
 	margin-top: 150px;
 	grid-column: 1 / span 3;
+}
+
+.btn-normal {
+	color: #dbc5c5;
+	margin: 0.5em 0.5em;
+	padding: 0.5em;
+	text-decoration: none;
+	border: 1px solid #dbc5c5;
+}
+
+.btn-normal p {
+	margin: 0 5px;
+}
+
+.btn-normal:hover {
+    color: white;
+    border-color: white;
+}
+
+.btn-normal:active {
+    color: #ad9c9c;
+    border-color: #ad9c9c;
+    background-color: #6d1110;
 }
 
 /* 	////////////////////////////////////////////
