@@ -52,11 +52,12 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
-	margin: 0 0 0.5em 0;
+	margin: 1em 0 0.5em 0;
 }
 
 h5 {
 	font-size: 1.25em;
+	margin: 1em 0;
 }
 
 /* 	////////////////////////////////////////////
@@ -67,7 +68,7 @@ h5 {
 	grid-area: header;
 	display: flex;
 	justify-content: center;
-	background-color: #b31c1b;
+	background-color: #a02828;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 	padding: 2em 0;
@@ -159,7 +160,7 @@ h5 {
 	////////////////////////////////////////////	*/ 
 
 #lang-soft-edu {
-	padding: 50px 7%;
+	padding: 0 7% 75px 7%;
 	background-color: #e5e0e0;
 	background-image: url(/images/jesus-kiteque-224069-unsplash.png);
 	background-position: 50% 80%;
@@ -177,7 +178,7 @@ h5 {
 	border-radius: 50%;
 	padding: 2.5em;
 	background-color: white;
-	margin: 0 auto;
+	margin: 75px auto 0 auto;
 }
 
 .icon-circle i {
@@ -209,7 +210,7 @@ h5 {
 
 .company {
 	justify-content: space-between;
-	background-color: #b31c1b;
+	background-color: #c8aaaa;
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -275,7 +276,7 @@ h5 {
 	min-height: 50px;
 	text-align: center;
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
-	background-color: #b31c1b;
+	background-color: #8c1919;
 }
 
 .banner-red h4 {
@@ -346,33 +347,38 @@ h5 {
 }
 
 /* 	////////////////////////////////////////////
-	BACKGROUND IMG CLASSES - for projects and Companies
+	IMG CLASSES - for projects and Companies
 	////////////////////////////////////////////	*/
 
 .bg-cover {
 	background-size: cover;
 	background-position: center;
-	background-blend-mode: overlay;
 }	
 
 .bg-proj-small {
-	background-blend-mode: normal;
 	background-position: 50% 35%;
 }
 
+/* main projects */
 .bg-wildtangent-casino {
 	background-image: url("/images/ProjectHeaders/WildTangent.png");
-	background-blend-mode: normal;
 }
 
 .bg-spellslingers {
 	background-image: url("/images/ProjectHeaders/SpellSlingers.png");
-	background-blend-mode: normal;
 }
 
 .bg-stellarfortune {
 	background-image: url("/images/ProjectHeaders/StellarFortune.png");
-	background-blend-mode: normal;
+}
+
+/* companies */
+.bg-freelance {
+	background-image: url(/images/sylvia-yang-409493-unsplash.png);
+}
+
+.bg-cake-golem {
+	background-image: url(/images/sergee-bee-7017-unsplash.png);
 }
 
 .bg-wildtangent {
@@ -383,37 +389,43 @@ h5 {
 	background-image: url(/images/global_gaming_group.png);
 }
 
-.bg-sunstorm {
-	background-image: url(/images/sunstorm_games.png);
-}
-
 .bg-spin-for-good {
 	background-image: url(/images/daniil-vnoutchkov-397278-unsplash.png);
 }
 
-.bg-cake-golem {
-	background-image: url(/images/sergee-bee-7017-unsplash.png);
+.bg-sunstorm {
+	background-image: url(/images/sunstorm_games.png);
 }
 
-.bg-freelance {
-	background-image: url(/images/sylvia-yang-409493-unsplash.png);
+/* company projects */
+.bg-proj-freelance {
+	background-image: url(/images/ProjectHeaders/Freelance.png);
+	background-position: 50% 0%;
 }
 
-.bg-proj-polarbowler {
-	background-image: url(/images/ProjectHeaders/PolarBowler.png);
-}
-
-.bg-proj-supersevens {
-	background-image: url(/images/ProjectHeaders/SuperSevens.png);
+.bg-proj-spellslingers {
+	background-image: url(/images/ProjectHeaders/SpellSlingers_small.png);
+	background-position: 50% 20%;
 }
 
 .bg-proj-wildtangentcasino {
 	background-image: url(/images/ProjectHeaders/WildTangentCasino.png);
 }
 
-.bg-proj-spellslingers {
-	background-image: url(/images/ProjectHeaders/SpellSlingers_small.png);
-	background-position: 50% 20%;
+/* .bg-proj-polarbowler {
+	background-image: url(/images/ProjectHeaders/PolarBowler.png);
+}
+
+.bg-proj-supersevens {
+	background-image: url(/images/ProjectHeaders/SuperSevens.png);
+} */
+
+.bg-proj-stellarfortune {
+	background-image: url(/images/ProjectHeaders/StellarFortune_small.png);
+}
+
+.bg-proj-spinforgood {
+	background-image: url(/images/ProjectHeaders/SpinForGood.png);
 }
 
 .bg-proj-sunnyvillepetsalon {
@@ -425,21 +437,12 @@ h5 {
 	background-image: url(/images/ProjectHeaders/MyPony.png);
 }
 
-.bg-proj-spinforgood {
-	background-image: url(/images/ProjectHeaders/SpinForGood.png);
-}
-
-.bg-proj-stellarfortune {
-	background-image: url(/images/ProjectHeaders/StellarFortune_small.png);
-}
-
-.bg-proj-freelance {
-	background-image: url(/images/ProjectHeaders/Freelance.png);
-	background-position: 50% 0%;
-}
-
+/* about */
 .bg-artist {
 	background-image: url(/images/Sam.jpg);
+	max-width: 500px; 
+	min-width:200px; 
+	min-height: 250px;
 }
 
 /* 	////////////////////////////////////////////
@@ -449,7 +452,7 @@ h5 {
 .contact {
 	grid-area: contact;
 	color: #dbc5c5;
-	background-color: #b31c1b;
+	background-color: #a02828;
 	padding: 15px;
 	border-top: 1px solid #850606;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
@@ -484,7 +487,7 @@ h5 {
 .footer {
 	grid-area: footer;
 	color: #ee2524;
-	background-color: #850606;
+	background-color: #8c1919;
 	padding: 14px 0;
 }
 
@@ -595,3 +598,41 @@ h5 {
 .tag-proto {
 	background-color: #4ee5d8;
 }*/
+
+.image-chip {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-draw {
+	background-image: url(https://images.unsplash.com/photo-1511854005000-f27912f66ade?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af66e8fb5115d702cd19c7145e616641&auto=format&fit=crop&w=1050&q=80);
+}
+
+.bg-walk {
+	background-image: url(https://images.unsplash.com/photo-1521953884764-5484f171c1a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=372e6ccaef37e81bd31bfe8e8f2da022&auto=format&fit=crop&w=1050&q=80);
+}
+
+.bg-cook {
+	background-image: url(https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=563379aa04ffc7a7acaa0b024b0b90fe&auto=format&fit=crop&w=730&q=80);
+}
+
+.bg-anime {
+	background-image: url(https://images.unsplash.com/photo-1467293622093-9f15c96be70f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c64fdfb93cfc7ef8354665bf1507b30a&auto=format&fit=crop&w=1050&q=80);
+}
+
+.bg-vgame {
+	background-image: url(https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4da6b29141c3acee36f4fea461fa211&auto=format&fit=crop&w=1052&q=80);
+}
+
+.bg-smash {
+	background-image: url(https://images.unsplash.com/photo-1515264741767-1b533a4cdcb7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1f073745b69faf7429a8b67a6ca7575&auto=format&fit=crop&w=1050&q=80);
+}
+
+.bg-bgame {
+	background-image: url(https://images.unsplash.com/photo-1506954673998-b077f05b13c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbd9462960235b41245689f258d125a8&auto=format&fit=crop&w=1191&q=80);
+}
