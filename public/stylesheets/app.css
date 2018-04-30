@@ -88,6 +88,7 @@ h5 {
 	position: absolute;
 	top: 50px;
 	width: 100%;
+	min-height: 100%;
 }
 
 .main {
@@ -183,7 +184,7 @@ h5 {
 
 .icon-circle i {
 	color: #ceb6b6;
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 .company-logo-wrap {
@@ -456,6 +457,7 @@ h5 {
 	padding: 15px;
 	border-top: 1px solid #850606;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+	margin-top: 150px;
 }
 
 .contact-content {
@@ -482,6 +484,7 @@ h5 {
 
 .contact i {
 	padding: 0 10px;
+	font-size: 1.5em;
 }
 
 .footer {
@@ -635,4 +638,8 @@ h5 {
 
 .bg-bgame {
 	background-image: url(https://images.unsplash.com/photo-1506954673998-b077f05b13c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbd9462960235b41245689f258d125a8&auto=format&fit=crop&w=1191&q=80);
+}
+
+.header img {
+	margin-top: 50px;
 }
