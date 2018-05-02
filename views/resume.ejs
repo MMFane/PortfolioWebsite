@@ -1,11 +1,18 @@
 <% include ./partials/header.ejs %>	
-<% include ./partials/nav.ejs %>
 
 <div class="grid">
     <header class="flex-col header">
-        <img class="section-header" src ="/images/header_resume.png" alt="Resume"/>
+        <div>
+            <img class="signature" src="/images/Signature.png"/>
+        </div>
+        <h1 class="flex-wrap flex-center" style="padding: 0 50px;">Samantha Yeager</h1>
+        <h2><em>UI / UX Designer</em></h2>
     </header>
+    
+    <% include ./partials/nav.ejs %>
+    
     <div id="resume">
+        <img class="section-header" src ="/images/header_resume.png" alt="Resume"/>
         <div class="banner-red border-bottom">
             <p> Download: <span><a href="#"><i class="fas fa-file-pdf"></i> PDF</a></span> <span><a href="#"><i class="fas fa-file-word"></i> DOCX</a></span></p>
         </div>

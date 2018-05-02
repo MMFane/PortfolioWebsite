@@ -1,11 +1,18 @@
 <% include ./partials/header.ejs %>	
-<% include ./partials/nav.ejs %>
 
 <div class="grid">
     <header class="flex-col header">
-        <img class="section-header" src ="/images/header_about.png" alt="About Me"/>
+        <div>
+            <img class="signature" src="/images/Signature.png"/>
+        </div>
+        <h1 class="flex-wrap flex-center" style="padding: 0 50px;">Samantha Yeager</h1>
+        <h2><em>UI / UX Designer</em></h2>
     </header>
+
+    <% include ./partials/nav.ejs %>
+
     <div id="about">
+        <img class="section-header" src ="/images/header_about.png" alt="About Me"/>
         <div class="flex-wrap flex-col no-overflow">
             <div class="flex-wrap company flex-align-center">
                 <div class="flex-wrap flex-section company-section bg-cover bg-artist">
@@ -58,44 +65,26 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-wrap company company-section">
+            <div class="flex-wrap company company-section flex-col no-padding">
                 <h5>Current Favorite Games</h5>
-                <div class="flex-wrap flex-section chip-wrap">
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Clash Royale</div>
+                <div class="flex-wrap">
+                    <div class="image-chip bg-game-clash">
+                        <p>Clash Royale</p>
                     </div>
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Stardew Valley</div>
+                    <div class="image-chip bg-game-stardew">
+                        <p>Stardew Valley</p>
                     </div>
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Cuphead</div>
+                    <div class="image-chip bg-game-cup">
+                        <p>Cuphead</p>
                     </div>
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Civilization VI</div>
+                    <div class="image-chip bg-game-civ">
+                        <p>Civilization VI</p>
                     </div>
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Breath of the Wild</div>
+                    <div class="image-chip bg-game-wild">
+                        <p>Breath of the Wild</p>
                     </div>
-                    <div class="chip">
-                        <div class="chip-tag">Video</div>
-                        <div class="chip-body">Super Smash Bros for Wii U</div>
-                    </div>
-                    <div class="chip">
-                        <div class="chip-tag">Board</div>
-                        <div class="chip-body">Seven Wonders</div>
-                    </div>
-                    <div class="chip">
-                        <div class="chip-tag">Board</div>
-                        <div class="chip-body">Betrayal at the House on the Hill</div>
-                    </div>
-                    <div class="chip">
-                        <div class="chip-tag">Board</div>
-                        <div class="chip-body">Sushi Go</div>
+                    <div class="image-chip bg-game-smash">
+                        <p>Super Smash Bros for Wii U</p>
                     </div>
                 </div>
             </div>
