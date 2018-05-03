@@ -105,17 +105,16 @@ h5 {
 
 .section-header {
 	width: 175px;
-	margin: 0 auto 1.25em auto;
+	margin: 75px auto 1.25em auto;
 }
 
 #projects, #resume, #about, #reviews {
-	margin-top: 75px;
 	grid-column: 1 / span 3;
 }
 
 #resume, #about, #reviews {
 	max-width: 1600px;
-	margin: 75px auto 0 auto;
+	margin: 0 auto;
 }
 
 .btn-normal {
@@ -496,10 +495,6 @@ h5 {
 
 .end-margin {
 	margin-bottom: 150px;
-}
-
-.margin-top-25 {
-	margin-top: 25px;
 }
 
 .no-overflow {
