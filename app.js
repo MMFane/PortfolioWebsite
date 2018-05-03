@@ -11,21 +11,25 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.get("/resume", function(req, res) {
-	res.render("resume")
-});
+// app.get("/resume", function(req, res) {
+// 	res.render("resume")
+// });
 
-app.get("/about", function(req, res) {
-	res.render("about")
-});
+// app.get("/about", function(req, res) {
+// 	res.render("about")
+// });
 
-app.get("/contact", function(req, res) {
-	res.render("contact")
-});
+// app.get("/contact", function(req, res) {
+// 	res.render("contact")
+// });
 
 // app.get("/wildtangent-casino", function(req, res) {
 // 	res.render("")
 // });
+
+app.get("/about/reviews", function(req, res) {
+    res.render("reviews");
+});
 
 app.listen(port, function() {
     console.log("Portfolio: Server is go");

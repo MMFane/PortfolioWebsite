@@ -90,13 +90,14 @@ h5 {
 
 .grid {
 	position: absolute;
-	/* top: 50px; */
+	top: 50px;
 	width: 100%;
 	min-height: 100%;
 }
 
 .main {
 	grid-area: main;
+	min-height: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
@@ -107,9 +108,14 @@ h5 {
 	margin: 0 auto 1.25em auto;
 }
 
-#projects, #resume, #about {
+#projects, #resume, #about, #reviews {
 	margin-top: 75px;
 	grid-column: 1 / span 3;
+}
+
+#resume, #about, #reviews {
+	max-width: 1600px;
+	margin: 75px auto 0 auto;
 }
 
 .btn-normal {
@@ -140,7 +146,7 @@ h5 {
 	////////////////////////////////////////////	*/ 
 
 .proj-main {
-	min-height: 600px;
+	height: 600px;
 }
 
 .proj-sub {
@@ -240,8 +246,8 @@ h5 {
 }
 
 .store-badge {
-	width: auto;
-	height: 40px;
+	width: 125px;
+	height: auto;
 	padding: 0 4px;
 }
 
@@ -255,7 +261,7 @@ h5 {
 	background-color: black;
 	border-radius: 10px;
 	border: 1px solid lightgrey;
-	padding: 0.4em;
+	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
 
@@ -264,7 +270,7 @@ h5 {
 }
 
 .btn-badge i {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	display: inline;
 }
 
@@ -362,85 +368,70 @@ h5 {
 }	
 
 .bg-proj-small {
-	background-position: 50% 35%;
+	background-position: center;
 }
 
 /* main projects */
 .bg-wildtangent-casino {
-	background-image: url("/images/ProjectHeaders/WildTangent.png");
+	background-image: url("/images/ProjectHeaders/proj_main_wild-tangent.png");
 }
 
 .bg-spellslingers {
-	background-image: url("/images/ProjectHeaders/SpellSlingers.png");
+	background-image: url("/images/ProjectHeaders/proj_main_spell-slingers.png");
 }
 
 .bg-stellarfortune {
-	background-image: url("/images/ProjectHeaders/StellarFortune.png");
+	background-image: url("/images/ProjectHeaders/proj_main_stellar-fortune.png");
 }
 
 /* companies */
 .bg-freelance {
-	background-image: url(/images/sylvia-yang-409493-unsplash.png);
+	background-image: url(/images/CompanyHeaders/sylvia-yang-409493-unsplash.png);
 }
 
 .bg-cake-golem {
-	background-image: url(/images/sergee-bee-7017-unsplash.png);
+	background-image: url(/images/CompanyHeaders/sergee-bee-7017-unsplash.png);
 }
 
 .bg-wildtangent {
-	background-image: url(/images/sergee-bee-6680-unsplash.png);
+	background-image: url(/images/CompanyHeaders/sergee-bee-6680-unsplash.png);
 }
 
 .bg-g3 {
-	background-image: url(/images/global_gaming_group.png);
+	background-image: url(/images/CompanyHeaders/global_gaming_group.png);
 }
 
 .bg-spin-for-good {
-	background-image: url(/images/daniil-vnoutchkov-397278-unsplash.png);
+	background-image: url(/images/CompanyHeaders/daniil-vnoutchkov-397278-unsplash.png);
 }
 
 .bg-sunstorm {
-	background-image: url(/images/sunstorm_games.png);
+	background-image: url(/images/CompanyHeaders/sunstorm_games.png);
 }
 
 /* company projects */
 .bg-proj-freelance {
-	background-image: url(/images/ProjectHeaders/Freelance.png);
-	background-position: 50% 0%;
+	background-image: url(/images/ProjectHeaders/proj_freelance.png);
 }
 
 .bg-proj-spellslingers {
-	background-image: url(/images/ProjectHeaders/SpellSlingers_small.png);
-	background-position: 50% 20%;
+	background-image: url(/images/ProjectHeaders/proj_spell-slingers.png);
 }
 
 .bg-proj-wildtangentcasino {
-	background-image: url(/images/ProjectHeaders/WildTangentCasino.png);
+	background-image: url(/images/ProjectHeaders/proj_wild-tangent-casino.png);
 }
-
-/* .bg-proj-polarbowler {
-	background-image: url(/images/ProjectHeaders/PolarBowler.png);
-}
-
-.bg-proj-supersevens {
-	background-image: url(/images/ProjectHeaders/SuperSevens.png);
-} */
 
 .bg-proj-stellarfortune {
-	background-image: url(/images/ProjectHeaders/StellarFortune_small.png);
+	background-image: url(/images/ProjectHeaders/proj_stellar-fortune.png);
 }
 
 .bg-proj-spinforgood {
-	background-image: url(/images/ProjectHeaders/SpinForGood.png);
+	background-image: url(/images/ProjectHeaders/proj_spin-for-good.png);
 }
 
 .bg-proj-sunnyvillepetsalon {
-	background-image: url(/images/ProjectHeaders/SunnyvillePetSalon.png);
-	background-position: 50% 55%;
-}
-
-.bg-proj-mypony {
-	background-image: url(/images/ProjectHeaders/MyPony.png);
+	background-image: url(/images/ProjectHeaders/proj_sunnyville-pet-salon-and-my-pony.png);
 }
 
 /* about */
@@ -552,6 +543,10 @@ h5 {
 	justify-content: space-between;
 }
 
+.flex-justify-start {
+	justify-content: flex-start;
+}
+
 .flex-align-center {
 	align-items: center;
 }
@@ -583,39 +578,23 @@ h5 {
 }
 
 
-/*UNUSED*/
-/*.tag-art {
-	background-color: #ee2524;
-}
-
-.tag-anim {
-	background-color: #f76911;
-}
-
-.tag-ctrl {
-	background-color: #7c10f7;
-}
-
-.tag-engine {
-	background-color: #4e52ce;
-}
-
-.tag-org {
-	background-color: #ba3cd1
-}
-
-.tag-proto {
-	background-color: #4ee5d8;
-}*/
+/* UNSORTED */
 
 .image-chip {
 	display: flex;
 	justify-content: center;
-	align-content: center;
-	width: 50%;
+	width: 25%;
 	height: 100px;
 	background-size: cover;
 	background-position: center;
+}
+
+.image-chip p {
+	height: 30px;
+	line-height: 30px;
+	width: 75%;
+	margin: 35px 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 50), rgba(0, 0, 0, 50), rgba(0, 0, 0, 0))
 }
 
 .bg-draw {
@@ -670,6 +649,24 @@ h5 {
 	background-image: url(https://ginx.tv/wp-content/uploads/2015/01/smash09.jpg);
 }
 
-/* .header img {
-	margin-top: 50px;
-} */
+/* 	////////////////////////////////////////////
+RESPONSIVENESS
+////////////////////////////////////////////	*/ 
+@media screen and (max-width : 760px){
+	.proj-main {
+		height: 300px;
+	}
+
+	.proj-sub {
+		height: 200px;
+	}
+
+	.image-chip {
+		width: 50%;
+		font-size: 0.6em;
+	}
+
+	.bg-proj-small {
+		margin-bottom: 75px;
+	}
+}
