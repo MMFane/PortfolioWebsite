@@ -4,6 +4,7 @@ html, body {
 	width: 100%;
 	/* font-family: "Montserrat", sans-serif; */
 	font-family: "Francois One", sans-serif;
+	font-size: 16px;
 	letter-spacing: 1px;
 	text-align: center;
 	color: white;
@@ -25,22 +26,22 @@ h1 {
 	font-size: 2.5em;
 	text-transform: uppercase;
 	margin: 0;
-	font-family: "Francois One", sans-serif;
-	letter-spacing: 2px;
+	/* font-family: "Francois One", sans-serif; */
+	/* letter-spacing: 2px; */
 }
 
 h2 {
 	color: #dbc5c5;
 	font-size: 1.5em;
-	font-family: "Francois One", sans-serif;
+	/* font-family: "Francois One", sans-serif; */
 	text-transform: uppercase;
 	margin: 10px;
 }
 
 h3 {
 	font-size: 2.5em;
-	font-family: "Francois One", sans-serif;
-	letter-spacing: 1px;
+	/* font-family: "Francois One", sans-serif; */
+	/* letter-spacing: 1px; */
 	line-height: 1em;
 }
 
@@ -59,7 +60,7 @@ h3 {
 h4 {
 	font-size: 1.25em;
 	margin: 1em 0 0.5em 0;
-	font-family: "Francois One", sans-serif;
+	/* font-family: "Francois One", sans-serif; */
 }
 
 h5 {
@@ -67,6 +68,10 @@ h5 {
 	margin: 1em 0;
 }
 
+p {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0;
+}
 /* 	////////////////////////////////////////////
 	HEADER - Logo, name, title, and nav
 	////////////////////////////////////////////	*/
@@ -195,7 +200,7 @@ h5 {
 }
 
 .icon-circle i {
-	color: #ceb6b6;
+	color: #8c1919;
 	font-size: 2em;
 }
 
@@ -344,17 +349,20 @@ h5 {
 
 .chip-body {
 	color: white;
-	padding: 0.4em;
+	padding: 0.5em;
 	width: auto;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0;
 }
 
 .chip-tag {
-	color: #ceb6b6;
+	color: #8c1919;
 	background-color: white;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
 	padding: 0.4em;
 	width: auto;
+	/* letter-spacing: 2px; */
 }
 
 .chip-wrap {
@@ -582,6 +590,7 @@ h5 {
 .image-chip {
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	width: 25%;
 	height: 100px;
 	background-size: cover;
@@ -652,6 +661,11 @@ h5 {
 RESPONSIVENESS
 ////////////////////////////////////////////	*/ 
 @media screen and (max-width : 760px){
+
+	body {
+		font-size: 14px;
+	}
+
 	.proj-main {
 		height: 300px;
 	}
@@ -667,5 +681,54 @@ RESPONSIVENESS
 
 	.bg-proj-small {
 		margin-bottom: 75px;
+	}
+
+	.section-card {
+		width: 95%;
+	}
+
+	.company-section {
+		align-content: start;
+	}
+
+	.company-section p {
+		margin: 5px;
+	}
+
+	.company-title-section {
+		align-content: start;
+	}
+
+	#resume .company-section, #about .company-section {
+		padding: 1em 2em;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	.signature {
+		width: 100px;
+		height: 100px;
+	}
+	 
+	h4 {
+		margin-top: 0;
+	}
+
+	.icon-circle {
+		display: inline-block;
+		border-radius: 50%;
+		padding: 1.5em;
+		background-color: white;
+		margin: 50px auto 0 auto;
+	}
+
+	.contact {
+		margin-top: 75px;
 	}
 }
