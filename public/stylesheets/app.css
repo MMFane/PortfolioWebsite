@@ -26,6 +26,7 @@ h1 {
 	font-size: 2.5em;
 	text-transform: uppercase;
 	margin: 0;
+	padding: 0 50px;
 	/* font-family: "Francois One", sans-serif; */
 	/* letter-spacing: 2px; */
 }
@@ -82,12 +83,15 @@ p {
 	justify-content: center;
 	background-color: #a02828;
 	background-image: url(/images/Chalkboard.png);
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: contain;
 	background-attachment: fixed;
+	background-position: center;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-	padding: 2em 0;
+	padding: 3em 0 5em 0;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .signature {
@@ -127,6 +131,7 @@ p {
 #resume, #about, #reviews {
 	max-width: 1600px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .btn-normal {
@@ -184,9 +189,10 @@ p {
 #lang-soft-edu {
 	padding: 0 7% 75px 7%;
 	background-image: url(/images/Chalkboard.png);
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: contain;
 	background-attachment: fixed;
+	margin-top: -50px;
 }
 
 #lang-soft-edu h4,{
@@ -256,6 +262,10 @@ p {
 	min-height: 225px;
 }
 
+.most-recent-company {
+	margin-top: -55px;
+}
+
 .store-badge {
 	width: auto;
 	height: 40px;
@@ -297,8 +307,16 @@ p {
 	justify-content: center;
 	min-height: 50px;
 	text-align: center;
+	padding: 0.5em 0 1.5em 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
 	background-color: #8c1919;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
+
+.banner-red-reverse {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
 }
 
 .banner-red h4 {
@@ -466,13 +484,16 @@ p {
 	color: #dbc5c5;
 	background-color: #a02828;
 	background-image: url(/images/Chalkboard.png);
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: contain;
+	background-position: center;
 	background-attachment: fixed;
-	padding: 15px;
+	padding: 30px 0;
 	border-top: 1px solid #850606;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 	margin-top: 150px;
+	-webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
 
 .contact-content {
@@ -504,9 +525,12 @@ p {
 
 .footer {
 	grid-area: footer;
+	margin-top: -30px;
 	color: #ee2524;
 	background-color: #8c1919;
-	padding: 14px 0;
+	padding: 30px 16px 16px 16px;
+	-webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 }
 
 /* 	////////////////////////////////////////////
@@ -568,6 +592,10 @@ p {
 
 .flex-align-left {
 	align-content: stretch;
+}
+
+.flex-align-start {
+	align-content: flex-start;
 }
 
 .align-left {
@@ -746,5 +774,37 @@ RESPONSIVENESS
 
 	.width-third {
 		width: 100%;
+	}
+
+	#resume .most-recent-job {
+		padding-top: 60px;
+	}
+}
+
+/* Fix margins and padding for Edge, which does not currently support clip outside of svg */
+@supports (-ms-ime-align:auto) {
+    .header {
+		padding: 3em 0;
+	}
+
+	.banner-red {
+		padding: 0.25em 0;
+	}
+
+	#lang-soft-edu, .most-recent-company {
+		margin-top: 0;
+	}
+
+	#resume .most-recent-job {
+		padding-top: 0;
+	}
+
+	.contact {
+		padding: 15px 0;
+	}
+
+	.footer {
+		padding: 16px;
+		margin-top: 0;
 	}
 }
