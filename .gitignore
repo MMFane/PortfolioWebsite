@@ -1,4 +1,5 @@
 node_modules/*
 working_images/*
+working_code/*
 npm-debug.log
 /*.env

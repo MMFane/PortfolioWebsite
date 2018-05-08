@@ -179,11 +179,10 @@ p {
 
 #lang-soft-edu {
 	padding: 0 7% 75px 7%;
-	background-color: #e5e0e0;
 	background-image: url(/images/Chalkboard.png);
-	background-position: 50% 80%;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-attachment: fixed;
 }
 
 #lang-soft-edu h4,{
