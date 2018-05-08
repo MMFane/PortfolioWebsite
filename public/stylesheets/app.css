@@ -81,6 +81,10 @@ p {
 	display: flex;
 	justify-content: center;
 	background-color: #a02828;
+	background-image: url(/images/Chalkboard.png);
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-attachment: fixed;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 	padding: 2em 0;
@@ -344,6 +348,7 @@ p {
 	border: 1px solid rgba(255, 255, 255, 0.75);
 	margin: 0.3em;
 	align-items: stretch;
+	overflow: hidden;
 }
 
 .chip-body {
@@ -460,6 +465,10 @@ p {
 	grid-area: contact;
 	color: #dbc5c5;
 	background-color: #a02828;
+	background-image: url(/images/Chalkboard.png);
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-attachment: fixed;
 	padding: 15px;
 	border-top: 1px solid #850606;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
@@ -583,6 +592,9 @@ p {
 	padding: 1em;
 }
 
+.width-third {
+	width: 33%;
+}
 
 /* UNSORTED */
 
@@ -594,6 +606,7 @@ p {
 	height: 100px;
 	background-size: cover;
 	background-position: center;
+	opacity: overlay;
 }
 
 .image-chip p {
@@ -729,5 +742,9 @@ RESPONSIVENESS
 
 	.contact {
 		margin-top: 75px;
+	}
+
+	.width-third {
+		width: 100%;
 	}
 }
