@@ -810,6 +810,6 @@ RESPONSIVENESS
 
 	.header, #lang-soft-edu, .contact {
 		background-image: url('/images/Chalkboard_small.jpg');
-		/* background-attachment: fixed; */
+		background-attachment: fixed;
 	}
 }
