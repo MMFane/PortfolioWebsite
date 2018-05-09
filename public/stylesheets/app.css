@@ -807,4 +807,8 @@ RESPONSIVENESS
 		padding: 16px;
 		margin-top: 0;
 	}
+
+	.header, #lang-soft-edu, .contact {
+		background-image: url('/images/Chalkboard_small.jpg')
+	}
 }
