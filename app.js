@@ -23,9 +23,9 @@ app.get("/", function(req, res) {
 // 	res.render("contact")
 // });
 
-// app.get("/wildtangent-casino", function(req, res) {
-// 	res.render("")
-// });
+app.get("/projects/wildtangent-casino", function(req, res) {
+	res.render("proj-wtc")
+});
 
 app.get("/about/reviews", function(req, res) {
     res.render("reviews");
