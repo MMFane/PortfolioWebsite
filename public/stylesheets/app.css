@@ -242,6 +242,10 @@ p {
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
 }
 
+.pink-background {
+	background-color: #c8aaaa;
+}
+
 .company-section {
 	padding: 2em;
 	margin: 0;
@@ -695,6 +699,14 @@ p {
 
 .bg-game-smash {
 	background-image: url(https://ginx.tv/wp-content/uploads/2015/01/smash09.jpg);
+}
+
+.review {
+	border: 1px solid #a97e7e;
+	border-radius: 25px;
+	padding: 1em;
+	margin: 25px;
+	max-width: 300px;
 }
 
 /* 	////////////////////////////////////////////
