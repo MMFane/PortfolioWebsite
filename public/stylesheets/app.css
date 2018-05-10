@@ -60,7 +60,7 @@ h3 {
 
 h4 {
 	font-size: 1.25em;
-	margin: 1em 0 0.5em 0;
+	margin: 1em 0 0 0;
 	/* font-family: "Francois One", sans-serif; */
 }
 
@@ -136,7 +136,7 @@ p {
 
 .btn-normal {
 	color: #dbc5c5;
-	margin: 0.5em 0.5em;
+	margin-top: 1em;
 	padding: 0.5em;
 	text-decoration: none;
 	border: 1px solid #dbc5c5;
@@ -704,9 +704,18 @@ p {
 .review {
 	border: 1px solid #a97e7e;
 	border-radius: 25px;
-	padding: 1em;
 	margin: 25px;
-	max-width: 300px;
+	max-width: 400px;
+}
+
+.review p {
+	/* font-size: 1.1em; */
+	line-height: 1.5em;
+	text-align: left;
+}
+
+.hidden {
+	display: none;
 }
 
 /* 	////////////////////////////////////////////
