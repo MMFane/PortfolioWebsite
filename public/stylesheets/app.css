@@ -14,7 +14,7 @@ body {
 	min-height: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 3fr auto 1fr 1fr;
+	grid-template-rows: auto auto 1fr 1fr;
 	grid-template-areas: 
 		"header header header"
 		"main main main"
