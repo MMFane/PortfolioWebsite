@@ -137,9 +137,12 @@ li a {
     display: block;
     text-align: center;
     min-width: 100px;
-    line-height: 56px;
+    padding: 10px;
+    /* line-height: 56px; */
     color: #dbc5c5;
     text-decoration: none;
+    border: 1px solid #dbc5c5;
+    margin: 10px;
 }
 
 /*Hover state for top level links*/
@@ -217,6 +220,7 @@ input[type=checkbox]:checked ~ #menu{
     /*Make all menu links full width*/
     ul li, li a {
         width: 100%;
+        margin: 0;
     }
     /*Display 'show menu' link*/
     .show-menu {
