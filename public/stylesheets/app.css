@@ -702,20 +702,41 @@ p {
 }
 
 .review {
-	border: 1px solid #a97e7e;
-	border-radius: 25px;
 	margin: 25px;
-	max-width: 400px;
+	/* max-width: 400px; */
 }
 
 .review p {
-	/* font-size: 1.1em; */
+	font-size: 1.25em;
 	line-height: 1.5em;
 	text-align: left;
 }
 
+.paragraph {
+	max-width: 1100px;
+	border: 1px solid #a97e7e;
+	border-radius: 25px;
+	border-top-right-radius: 0;
+	padding: 25px;
+}
+
+.paragraph-reverse {
+	border-top-left-radius: 0;
+	border-top-right-radius: 25px;
+	
+}
+
+.review img {
+	margin-top: 25px;
+	max-width: 150px;
+}
+
 .hidden {
 	display: none;
+}
+
+.circle-img {
+	border-radius: 50%;
 }
 
 /* 	////////////////////////////////////////////
@@ -799,6 +820,11 @@ RESPONSIVENESS
 
 	#resume .most-recent-job {
 		padding-top: 60px;
+	}
+
+	.paragraph {
+		border-top-right-radius: 25px;
+		border-bottom-left-radius: 0;
 	}
 }
 
