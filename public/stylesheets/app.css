@@ -822,7 +822,9 @@ RESPONSIVENESS
 	#resume .most-recent-job {
 		padding-top: 60px;
 	}
+}
 
+@media screen and (max-width : 1557px){
 	.paragraph {
 		border-top-right-radius: 25px;
 		border-bottom-left-radius: 0;
