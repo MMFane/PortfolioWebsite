@@ -2,8 +2,7 @@ html, body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-	/* font-family: "Montserrat", sans-serif; */
-	font-family: "Francois One", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -27,30 +26,27 @@ h1 {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0 50px;
-	/* font-family: "Francois One", sans-serif; */
-	/* letter-spacing: 2px; */
+	font-family: "Francois One", sans-serif;
+	letter-spacing: 2px;
 }
 
 h2 {
 	color: #dbc5c5;
 	font-size: 1.5em;
-	/* font-family: "Francois One", sans-serif; */
+	font-family: "Francois One", sans-serif;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin: 10px;
 }
 
 h3 {
 	font-size: 2.5em;
-	/* font-family: "Francois One", sans-serif; */
-	/* letter-spacing: 1px; */
+	font-family: "Francois One", sans-serif;
+	letter-spacing: 1px;
 	line-height: 1em;
 }
 
 .title-card {
-	/* background: linear-gradient(to right, rgba(142, 44, 44, 0.25), rgba(142, 44, 44, 0.5), 
-		rgba(142, 44, 44, 0.75),rgba(142, 44, 44, 0.75), 
-		rgba(142, 44, 44, 0.5), rgba(142, 44, 44, 0.25));
-	border: 2px solid white; */
 	background-color: white;
 	color: #8d2f2f;
 	padding: 0.5em 0.5em;
@@ -61,7 +57,6 @@ h3 {
 h4 {
 	font-size: 1.25em;
 	margin: 1em 0 0 0;
-	/* font-family: "Francois One", sans-serif; */
 }
 
 h5 {
@@ -69,10 +64,6 @@ h5 {
 	margin: 1em 0;
 }
 
-p {
-	font-family: "Roboto", sans-serif;
-	letter-spacing: 0;
-}
 /* 	////////////////////////////////////////////
 	HEADER - Logo, name, title, and nav
 	////////////////////////////////////////////	*/
@@ -204,7 +195,7 @@ p {
 	display: inline-block;
 	border-radius: 50%;
 	padding: 2.5em;
-	background-color: white;
+	background-color: #cc6666;
 	margin: 75px auto 0 auto;
 }
 
@@ -242,9 +233,13 @@ p {
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
 }
 
-.pink-background {
+.light-background {
 	background-color: #f1ebee;
 	color: #2d292b;
+}
+
+.med-background {
+	background-color: #ddd7da;
 }
 
 .company-section {
@@ -315,13 +310,14 @@ p {
 	padding: 0.5em 0 1.5em 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
 	background-color: #8c1919;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+	
 }
 
 .banner-red-reverse {
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 }
 
 .banner-red h4 {
@@ -359,6 +355,44 @@ p {
 	height: auto;
 }
 
+.review p {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+.speech-bubble {
+	max-width: 1100px;
+	border: 1px solid rgba(220, 210, 210, 0.5);
+	border-radius: 25px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.05); 
+	border-top-right-radius: 0;
+	padding: 25px;
+}
+
+#about .speech-bubble {
+	border-top-right-radius: 25px;
+	border-top-left-radius: 0;
+	margin-top: 25px;
+}
+
+#about .speech-bubble:last-of-type {
+	margin-left: 25px;
+}
+
+#about .speech-bubble h5 {
+	margin: 0;
+}
+
+#about .chip-wrap {
+	margin-top: 10px;
+}
+
+.review img {
+	margin-top: 25px;
+	width: 150px;
+}
+
 /* 	////////////////////////////////////////////
 	CHIPS - small bits of information with a tag
 	i.e. software or languages I know 		  
@@ -378,8 +412,6 @@ p {
 	color: white;
 	padding: 0.5em;
 	width: auto;
-	font-family: "Roboto", sans-serif;
-	letter-spacing: 0;
 }
 
 .chip-tag {
@@ -389,7 +421,11 @@ p {
 	border-bottom-left-radius: 6px;
 	padding: 0.4em;
 	width: auto;
-	/* letter-spacing: 2px; */
+	font-family: "Francois One", sans-serif;
+}
+
+.chip-tag p {
+	margin: 0;
 }
 
 .chip-wrap {
@@ -474,10 +510,9 @@ p {
 
 /* about */
 .bg-artist {
-	background-image: url(/images/Sam.jpg);
-	max-width: 500px; 
-	min-width:200px; 
-	min-height: 250px;
+	/* background-image: url(/images/Sam.jpg); */
+	width: 250px;
+	height: 250px;
 }
 
 /* 	////////////////////////////////////////////
@@ -542,33 +577,13 @@ p {
 	HELPER CLASSES - small, generic, reusable
 	////////////////////////////////////////////	*/
 
-.end-margin {
-	margin-bottom: 150px;
-}
-
-.no-overflow {
-	overflow: hidden;
-}
-
-.padding-left {
-	padding-left: 10em;
-}
-
-.margin-top-small {
-	margin-top: 0;
-}
-
-.margin-top-2 {
-	margin-top: 2em;
-}
-
-.margin-bottom-large {
-	margin-bottom: 1.5em;
-}
-
 .flex-wrap {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.flex {
+	display: flex;
 }
 
 .flex-section {
@@ -583,6 +598,7 @@ p {
 .flex-justify-center {
 	justify-content: center;
 }
+
 .flex-justify-betw {
 	justify-content: space-between;
 }
@@ -603,21 +619,12 @@ p {
 	align-content: flex-start;
 }
 
-.align-left {
+.text-left {
 	text-align: left;
-}
-
-.title {
-	font-size: 1.5em;
-	font-weight: bold;
 }
 
 .text-black {
 	color: black;
-}
-
-.no-padding {
-	padding: 0;
 }
 
 .btn-regular {
@@ -629,115 +636,24 @@ p {
 	width: 33%;
 }
 
-/* UNSORTED */
-
-.image-chip {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	width: 25%;
-	height: 100px;
-	background-size: cover;
-	background-position: center;
-	opacity: overlay;
-}
-
-.image-chip p {
-	height: 30px;
-	line-height: 30px;
-	width: 75%;
-	margin: 35px 0;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 50), rgba(0, 0, 0, 50), rgba(0, 0, 0, 0))
-}
-
-.bg-draw {
-	background-image: url(https://images.unsplash.com/photo-1511854005000-f27912f66ade?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af66e8fb5115d702cd19c7145e616641&auto=format&fit=crop&w=1050&q=80);
-}
-
-.bg-walk {
-	background-image: url(https://images.unsplash.com/photo-1521953884764-5484f171c1a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=372e6ccaef37e81bd31bfe8e8f2da022&auto=format&fit=crop&w=1050&q=80);
-}
-
-.bg-cook {
-	background-image: url(https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=563379aa04ffc7a7acaa0b024b0b90fe&auto=format&fit=crop&w=730&q=80);
-}
-
-.bg-anime {
-	background-image: url(https://images.unsplash.com/photo-1467293622093-9f15c96be70f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c64fdfb93cfc7ef8354665bf1507b30a&auto=format&fit=crop&w=1050&q=80);
-}
-
-.bg-vgame {
-	background-image: url(https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4da6b29141c3acee36f4fea461fa211&auto=format&fit=crop&w=1052&q=80);
-}
-
-.bg-smash {
-	background-image: url(https://images.unsplash.com/photo-1515264741767-1b533a4cdcb7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1f073745b69faf7429a8b67a6ca7575&auto=format&fit=crop&w=1050&q=80);
-}
-
-.bg-bgame {
-	background-image: url(https://images.unsplash.com/photo-1506954673998-b077f05b13c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbd9462960235b41245689f258d125a8&auto=format&fit=crop&w=1191&q=80);
-}
-
-.bg-game-clash {
-	background-image: url(https://www.xyztimes.com/wp-content/uploads/2016/01/clash-royale-image-1024x534.jpg);
-}
-
-.bg-game-stardew {
-	background-image: url(https://assets.rockpapershotgun.com/images//2017/11/stardew-valley-multiplayer.jpg);
-}
-
-.bg-game-cup {
-	background-image: url(https://assets.pcmag.com/media/images/470358-cuphead-for-pc.jpg?width=1350&height=759);
-}
-
-.bg-game-civ {
-	background-image: url(https://images-na.ssl-images-amazon.com/images/I/91bAZc%2BV4WL._SL1500_.jpg);
-}
-
-.bg-game-wild {
-	background-image: url(https://www.zeldadungeon.net/wp-content/uploads/2014/06/Breath-of-the-Wild-Walkthrough.jpg);
-}
-
-.bg-game-smash {
-	background-image: url(https://ginx.tv/wp-content/uploads/2015/01/smash09.jpg);
-}
-
-.review {
-	margin: 25px;
-	/* max-width: 400px; */
-}
-
-.review p {
-	font-size: 1.25em;
-	line-height: 1.5em;
-	text-align: left;
-}
-
-.paragraph {
-	max-width: 1100px;
-	border: 1px solid #a97e7e;
-	border-radius: 25px;
-	border-top-right-radius: 0;
-	padding: 25px;
-}
-
-.paragraph-reverse {
-	border-top-left-radius: 0;
-	border-top-right-radius: 25px;
-	
-}
-
-.review img {
-	margin-top: 25px;
-	max-width: 150px;
-}
-
 .hidden {
 	display: none;
 }
 
 .circle-img {
 	border-radius: 50%;
+}
+
+.width-min-150 {
+	width: 150px;
+}
+
+.width-max-275 {
+	max-width: 275px;
+}
+
+.padding-25 {
+	padding: 25px;
 }
 
 /* 	////////////////////////////////////////////
@@ -807,7 +723,7 @@ RESPONSIVENESS
 		display: inline-block;
 		border-radius: 50%;
 		padding: 1.5em;
-		background-color: white;
+		background-color: #cc6666;
 		margin: 50px auto 0 auto;
 	}
 
@@ -822,10 +738,14 @@ RESPONSIVENESS
 	#resume .most-recent-job {
 		padding-top: 60px;
 	}
+
+	#about .speech-bubble:last-of-type {
+		margin-left: 0;
+	}
 }
 
 @media screen and (max-width : 1557px){
-	.paragraph {
+	#reviews .speech-bubble {
 		border-top-right-radius: 25px;
 		border-bottom-left-radius: 0;
 	}
