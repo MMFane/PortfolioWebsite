@@ -25,7 +25,7 @@ h1 {
 	font-size: 2.5em;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 0 50px;
+	padding: 0;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 2px;
 }
@@ -37,6 +37,14 @@ h2 {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin: 10px;
+}
+
+.nee {
+	text-align: center;
+	font-family: 'Francois One', sans-serif; 
+	letter-spacing: 2px; 
+	font-size: 1.6em; 
+	color:#9f9393;
 }
 
 h3 {
@@ -73,7 +81,7 @@ h5 {
 	display: flex;
 	justify-content: center;
 	background-color: #a02828;
-	background-image: url(/images/Chalkboard.png);
+	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
 	background-attachment: fixed;
@@ -119,7 +127,7 @@ h5 {
 	grid-column: 1 / span 3;
 }
 
-#resume, #about, #reviews {
+#resume, #reviews {
 	max-width: 1600px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -179,7 +187,7 @@ h5 {
 
 #lang-soft-edu {
 	padding: 0 7% 75px 7%;
-	background-image: url(/images/Chalkboard.png);
+	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
 	background-attachment: fixed;
@@ -195,12 +203,12 @@ h5 {
 	display: inline-block;
 	border-radius: 50%;
 	padding: 2.5em;
-	background-color: #cc6666;
+	background-color: #999;
 	margin: 75px auto 0 auto;
 }
 
 .icon-circle i {
-	color: #8c1919;
+	color: #222;
 	font-size: 2em;
 }
 
@@ -225,6 +233,7 @@ h5 {
 .company-logo {
 	width: 100px;
 	height: 100px;
+	margin: 20px 10px 0 10px;
 }
 
 .company {
@@ -430,7 +439,7 @@ h5 {
 .chip-tag {
 	display: flex;
 	align-items: center;
-	color: #8c1919;
+	color: #222;
 	background-color: white;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
@@ -538,7 +547,7 @@ h5 {
 	grid-area: contact;
 	color: #dbc5c5;
 	background-color: #a02828;
-	background-image: url(/images/Chalkboard.png);
+	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
 	background-position: center;
@@ -616,6 +625,10 @@ h5 {
 
 .flex-justify-betw {
 	justify-content: space-between;
+}
+
+.flex-justify-even {
+	justify-content: space-evenly;
 }
 
 .flex-justify-start {
