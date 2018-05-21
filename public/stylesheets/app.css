@@ -388,6 +388,19 @@ h5 {
 	margin-top: 10px;
 }
 
+#about .chip-body {
+	color: #8c1919;
+}
+
+#about .chip-tag {
+	color: #ddd7da;
+	background-color: #8c1919;
+}
+
+#about .chip {
+	border-color: #8c1919;
+}
+
 .review img {
 	margin-top: 25px;
 	width: 150px;
@@ -415,6 +428,8 @@ h5 {
 }
 
 .chip-tag {
+	display: flex;
+	align-items: center;
 	color: #8c1919;
 	background-color: white;
 	border-top-left-radius: 6px;

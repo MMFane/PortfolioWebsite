@@ -11,20 +11,16 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-// app.get("/resume", function(req, res) {
-// 	res.render("resume")
-// });
-
-// app.get("/about", function(req, res) {
-// 	res.render("about")
-// });
-
-// app.get("/contact", function(req, res) {
-// 	res.render("contact")
-// });
-
 app.get("/projects/wildtangent-casino", function(req, res) {
 	res.render("proj-wtc")
+});
+
+app.get("/projects/spell-slingers", function (req, res) {
+    res.render("proj-ss")
+});
+
+app.get("/projects/stellar-fortune", function (req, res) {
+    res.render("proj-sf")
 });
 
 app.get("/about/reviews", function(req, res) {
