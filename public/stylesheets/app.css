@@ -177,7 +177,7 @@ h5 {
 	border-radius: 20px;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
 	width: 90%;
-	max-width: 1400px;
+	max-width: 1410px;
 	overflow: hidden;
 }
 
@@ -251,6 +251,10 @@ h5 {
 	background-color: #ddd7da;
 }
 
+.dark-background {
+	background-color: #c6bcc1;
+}
+
 .company-section {
 	padding: 2em;
 	margin: 0;
@@ -309,41 +313,50 @@ h5 {
 	align-self: center;
 }
 
-.banner-red {
-	color: #dbc5c5;
+.banner {
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	min-height: 50px;
 	text-align: center;
 	padding: 0.5em 0 1.5em 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
-	background-color: #8c1919;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
-	
 }
 
-.banner-red-reverse {
+.border-top {
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.dark-red {
+	color: #dbc5c5;
+	background-color: #8c1919;
+}
+
+.pink {
+	color: 
+}
+
+.banner-reverse {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 }
 
-.banner-red h4 {
+.banner h4 {
 	color: white;
 	margin: 1.25em;
 }
 
-.banner-red span {
+.banner span {
 	margin-left: 10px;
 }
 
-.banner-red a {
+.banner a {
 	color: white;
 	text-decoration: none;
 }
 
-.banner-red a:hover {
+.banner a:hover {
 	color: black;
 }
 
@@ -540,6 +553,20 @@ h5 {
 }
 
 /* 	////////////////////////////////////////////
+	IMAGE GALLERIES - images in project pages
+	////////////////////////////////////////////	*/
+
+.project-img {
+	min-width: 470px;
+}
+
+.project-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* 	////////////////////////////////////////////
 	FOOTER - contact info and copyright claim
 	////////////////////////////////////////////	*/
 
@@ -661,7 +688,11 @@ h5 {
 }
 
 .width-third {
-	width: 33%;
+	width: 33.3%;
+}
+
+.width-two-thirds {
+	width: 66.6%
 }
 
 .hidden {
@@ -770,6 +801,10 @@ RESPONSIVENESS
 	#about .speech-bubble:last-of-type {
 		margin-left: 0;
 	}
+	
+	.project-img {
+		min-width: 365.25px;
+	}
 }
 
 @media screen and (max-width : 1557px){
@@ -811,3 +846,27 @@ RESPONSIVENESS
 		background-attachment: fixed;
 	}
 }
+
+
+
+/* UNORDERED */
+
+ul {
+	text-align: left;
+}
+ul li {
+	list-style: square;
+}
+
+.inset-section-light {
+	margin: 25px;
+	border: 1px solid #ddd7da;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.inset-section-light ul {
+	margin-right: 20px;
+}
+
+
