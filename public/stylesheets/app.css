@@ -267,7 +267,7 @@ ul li {
 	background-color: #c6bcc1;
 }
 
-.company-section {
+.company-section, .brief-section {
 	padding: 2em;
 	margin: 0;
 	justify-content: center;
@@ -601,6 +601,10 @@ ul li {
 	width: calc(100% - 0px);
 }
 
+.brief-section {
+	width: 50%;
+}
+
 /* 	////////////////////////////////////////////
 	FOOTER - contact info and copyright claim
 	////////////////////////////////////////////	*/
@@ -776,7 +780,7 @@ RESPONSIVENESS
 		margin-bottom: 75px;
 	}
 
-	.section-card {
+	.section-card, .brief-section {
 		width: 95%;
 	}
 
