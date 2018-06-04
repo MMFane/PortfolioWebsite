@@ -130,6 +130,11 @@ ul li {
 	margin: 75px auto 1.25em auto;
 }
 
+.project-header {
+	width: 265;
+	margin: 75px auto 1.25em auto;
+}
+
 #projects, #resume, #about, #reviews {
 	grid-column: 1 / span 3;
 }
