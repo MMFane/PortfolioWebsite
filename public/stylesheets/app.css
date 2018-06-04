@@ -11,14 +11,14 @@ html, body {
 
 body {
 	min-height: 100%;
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto auto 1fr 1fr;
 	grid-template-areas: 
 		"header header header"
 		"main main main"
 		"contact contact contact"
-		"footer footer footer";
+		"footer footer footer"; */
 }
 
 h1 {
@@ -70,6 +70,13 @@ h4 {
 h5 {
 	font-size: 1em;
 	margin: 1em 0;
+}
+
+ul {
+	text-align: left;
+}
+ul li {
+	list-style: square;
 }
 
 /* 	////////////////////////////////////////////
@@ -556,14 +563,33 @@ h5 {
 	IMAGE GALLERIES - images in project pages
 	////////////////////////////////////////////	*/
 
-.project-img {
-	min-width: 470px;
-}
-
 .project-img img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.gallery-grid {
+	/* width: 100%; */
+	/* max-width: 1410px; */
+	margin: 0 auto;
+}
+
+.gallery-sizer, .gallery-item {
+	width: calc(33% - 0px);
+}
+
+.gutter-sizer {
+	width: calc((100% - (3*33%)) / 2);
+}
+.gallery-item {
+	float: left;
+	border: 1px solid black;
+	margin: 0 auto 10px auto;
+}
+
+.gallery-item-width-2 {
+	width: calc(66% - 0px);
 }
 
 /* 	////////////////////////////////////////////
@@ -801,9 +827,13 @@ RESPONSIVENESS
 	#about .speech-bubble:last-of-type {
 		margin-left: 0;
 	}
-	
-	.project-img {
-		min-width: 365.25px;
+
+	.gallery-sizer, .gallery-item {
+		width: calc(100% - 2px);
+	}
+
+	.gallery-item-width-2 {
+		width: calc(100% - 2px);
 	}
 }
 
@@ -850,13 +880,6 @@ RESPONSIVENESS
 
 
 /* UNORDERED */
-
-ul {
-	text-align: left;
-}
-ul li {
-	list-style: square;
-}
 
 .inset-section-light {
 	margin: 25px;

@@ -11,6 +11,10 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
+app.get("/test", function (req, res) {
+    res.render("MASONRY_TEST");
+});
+
 app.get("/projects/wildtangent-casino", function(req, res) {
 	res.render("proj-wtc")
 });
