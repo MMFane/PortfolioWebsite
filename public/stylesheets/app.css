@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
 	color: #dbc5c5;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -43,23 +43,24 @@ h2 {
 	text-align: center;
 	font-family: 'Francois One', sans-serif; 
 	letter-spacing: 2px; 
-	font-size: 1.6em; 
+	font-size: 1.25em; 
 	color:#9f9393;
 }
 
 h3 {
+	color: #ede1e1;
 	font-size: 2.5em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
 	line-height: 1em;
+	font-weight: 300;
 }
 
 .title-card {
-	background-color: white;
-	color: #8d2f2f;
 	padding: 0.5em 0.5em;
 	margin-bottom: 0.5em;
 	max-width: 500px;
+	border: 1px solid #ede1e1;
 }
 
 h4 {
@@ -95,14 +96,14 @@ ul li {
 	background-position: center;
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-	padding: 3em 0 5em 0;
+	padding: 2em 0 5em 0;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .signature {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin: 1em;
 }
 
@@ -146,11 +147,19 @@ ul li {
 }
 
 .btn-normal {
-	color: #dbc5c5;
+	color: #8d2f2f;
 	margin-top: 1em;
-	padding: 0.5em;
+	padding: 0.5em 2em ;
 	text-decoration: none;
-	border: 1px solid #dbc5c5;
+	background: linear-gradient(white, white, white, lightgrey, darkgrey);
+	font-family: "Francois One", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	letter-spacing: 0;
+	border-radius: 7px;
+	border: 1px solid white;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 1),
+				0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .btn-normal p {
@@ -270,7 +279,7 @@ ul li {
 .company-section, .brief-section {
 	padding: 2em;
 	margin: 0;
-	justify-content: center;
+	justify-content: start;
 }
 
 .company-title-section {
@@ -478,7 +487,8 @@ ul li {
 }
 
 .chip-wrap {
-	justify-content: center;
+	margin-top: 10px;
+	justify-content: left;
 }
 
 /* 	////////////////////////////////////////////
@@ -841,16 +851,16 @@ RESPONSIVENESS
 	}
 
 	h1 {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
 	.signature {
-		width: 100px;
-		height: 100px;
+		width: 75px;
+		height: 75px;
 	}
 	 
 	h4 {
