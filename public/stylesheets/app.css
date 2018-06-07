@@ -180,14 +180,16 @@ ul li {
 }
 
 .btn-normal:hover {
-    color: white;
-    border-color: white;
+	color: white;
+	background: linear-gradient(lightgrey, lightgrey, lightgrey, darkgrey, grey);
+	border: 1px solid darkgrey;
+	
 }
 
 .btn-normal:active {
-    color: #ad9c9c;
+    color: black;
     border-color: #ad9c9c;
-    background-color: #6d1110;
+    background: linear-gradient(darkgrey, darkgrey, darkgrey, grey, #555);
 }
 
 /* 	////////////////////////////////////////////
