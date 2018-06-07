@@ -48,8 +48,8 @@ h2 {
 }
 
 h3 {
-	color: #ede1e1;
-	font-size: 2.5em;
+	color: #ee2524;
+	font-size: 1.75em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
 	line-height: 1em;
@@ -60,7 +60,7 @@ h3 {
 	padding: 0.5em 0.5em;
 	margin-bottom: 0.5em;
 	max-width: 500px;
-	border: 1px solid #ede1e1;
+	border: 3px solid #ee2524;
 }
 
 h4 {
@@ -97,8 +97,8 @@ ul li {
 	border-bottom: 1px solid #850606;
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 	padding: 2em 0 5em 0;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	/* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
 }
 
 .signature {
@@ -128,16 +128,29 @@ ul li {
 
 .section-header {
 	width: 175px;
-	margin: 75px auto 1.25em auto;
+	margin: 100px auto 1.25em auto;
 }
 
 .project-header {
 	width: 265;
-	margin: 75px auto 1.25em auto;
+	margin: 100px auto 1.25em auto;
 }
 
 #projects, #resume, #about, #reviews {
 	grid-column: 1 / span 3;
+}
+
+#projects {
+	width: 100%;
+	margin-top: -75px;
+	padding: 0 0 75px 0;
+	background-image: url(/images/casino.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
 }
 
 #resume, #reviews {
@@ -200,6 +213,11 @@ ul li {
 	width: 90%;
 	max-width: 1410px;
 	overflow: hidden;
+}
+
+.project-img {
+	width: 350px;
+	height: auto;
 }
 
 /* 	////////////////////////////////////////////
@@ -578,7 +596,7 @@ ul li {
 	IMAGE GALLERIES - images in project pages
 	////////////////////////////////////////////	*/
 
-.project-img img {
+.gallery-img img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -809,6 +827,10 @@ RESPONSIVENESS
 ////////////////////////////////////////////	*/ 
 @media screen and (max-width : 760px){
 
+	#projects {
+		margin-top: -80px;
+	}
+	
 	body {
 		font-size: 14px;
 	}
@@ -914,6 +936,10 @@ RESPONSIVENESS
 	#reviews .speech-bubble {
 		border-top-right-radius: 25px;
 		border-bottom-left-radius: 0;
+	}
+
+	.project-img {
+		width: 200px;
 	}
 }
 
