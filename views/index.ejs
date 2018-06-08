@@ -2,7 +2,7 @@
 <% include ./partials/header.ejs %>
 
 			<div class="main">
-				<div id="projects">
+				<div id="projects" class="casino-bg">
 					<div class="flex-wrap flex-justify-even">
 						<div class="flex-wrap flex-col flex-justify-center flex-align-center">
 							<img class="project-header" src="/images/SectionHeaders/header_wildtangent_white.png" alt="WildTangent Casino Project"/>
@@ -45,19 +45,19 @@
 					</div>
 				</div>
 
-				<div class="flex-wrap flex-col flex-align-center text-black text-left" style="grid-column: 1 / span 3; margin: 125px 25px 0 25px;">
+				<div class="flex-wrap flex-col flex-align-center text-black text-left" style="grid-column: 1 / span 3; margin: 150px 25px 0 25px;">
 					<div class="flex-wrap flex-col flex-align-left">
 						<p>"I had the incredible pleasure of working with Samantha Yeager on a contractual basis for several months."</p>
 						<p>"Could she deliver what we needed, on time and on our budget? Yup. Turns out she could, and did."</p>
-						<p style="margin-bottom:50px;">"She gets along with everyone she meets, is dependable and is a great problem solver."</p>
+						<p style="margin-bottom:20px;">"She gets along with everyone she meets, is dependable and is a great problem solver."</p>
 					</div>
 					
 					<a class="btn-normal" href="/about/reviews" style="align-self: center; text-align:center;">Read Reviews</a>
 				</div>
 
-				<div id="resume">
-					<img class="section-header" src="/images/SectionHeaders/header_resume.png" alt="Resume" style="margin-top:150px"/>
-					<div class="banner dark-red">
+				<div class="flex-wrap flex-col" style="grid-column: 1 / span 3;">
+					<img class="section-header" src="/images/SectionHeaders/header_resume.png" alt="Resume" style="margin-top:200px" />
+					<div class="banner dark-red banner-tilt">
 						<p> Download:
 							<span>
 								<a href="#">
@@ -199,6 +199,10 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				
+
+				<div id="resume">
 					<div class="flex-wrap flex-col">
 						<div class="banner dark-red banner-reverse">
 							<h4>Work Experience</h4>
@@ -385,28 +389,84 @@
 
 				<div id="about">
 					<img class="section-header" src="/images/SectionHeaders/header_about.png" alt="About Me" />
-					<div class="section-card">
-						<div class="flex-wrap light-background flex-justify-even">
+					<div class="section-card casino-bg">
+						<div class="flex-wrap flex-justify-even">
 							<div class="company-section flex-col">
 								<img class="circle-img bg-artist" src="/images/Sam.jpg">
 							</div>
 							<div class="flex-wrap flex-col company-section" style="max-width:835px;">
-								<div class="speech-bubble flex-wrap flex-justify-center">
-									<h5>My Elevator Pitch</h5>
+								<div class="speech-bubble flex-wrap flex-justify-center light-background">
+									<h4 style="margin: 0 0 25px 0;">My Elevator Pitch</h4>
 									<p>I'm a UI/UX Designer with four years of experience specializing in game and app development. I focus on design process
 										best practices, collaborate within and across teams, and bridge the gap between aesthetics and technology.</p>
 								</div>
-								<div class="speech-bubble flex-wrap flex-col flex-justify-center">
-									<h5>Work Status</h5>
-									<p>
-										<strong>Actively looking for new roles.</strong>
-									</p>
-									<p>Please contact me about opportunities!</p>
-									<p>
-										<em>Open to freelance, contract, and fulltime positions</em>
-									</p>
+								<div class="speech-bubble flex-wrap flex-col flex-justify-center light-background">
+									<h4 style="margin: 0 0 25px 0;">Work Status</h4>
+									<div class="flex-wrap">
+										<div class="flex-section">
+											<i class="fas fa-exclamation-circle fa-2x"></i>
+											<p>
+												<strong>Actively looking</strong>
+											</p>
+											<p>Please contact me about opportunities!</p>
+										</div>
+										<div class="flex-section">
+											<p>
+												<em>Looking for:</em>
+											</p>
+											<div class="flex-wrap chip-wrap">
+												<div class="chip">
+													<div class="chip-tag">
+														<i class="fas fa-clock"></i>
+													</div>
+													<div class="chip-body">
+														freelance
+													</div>
+												</div>
+												<div class="chip">
+													<div class="chip-tag">
+														<i class="fas fa-clock"></i>
+													</div>
+													<div class="chip-body">
+														contract
+													</div>
+												</div>
+												<div class="chip">
+													<div class="chip-tag">
+														<i class="fas fa-clock"></i>
+													</div>
+													<div class="chip-body">
+														fulltime
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="flex-section">
+											<p>
+												<em>Location:</em>
+											</p>
+											<div class="flex-wrap chip-wrap">
+												<div class="chip">
+													<div class="chip-tag">
+														<i class="fas fa-map-marker"></i>
+													</div>
+													<div class="chip-body">
+														Seattle, WA
+													</div>
+												</div>
+												<div class="chip">
+													<div class="chip-tag">
+														<i class="fas fa-map-marker"></i>
+													</div>
+													<div class="chip-body">
+														remote
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="speech-bubble flex-wrap flex-col flex-align-center flex-justify-center">
+								<div class="speech-bubble flex-wrap flex-col flex-align-center flex-justify-center light-background">
 									<h5>Reviews of My Work</h5>
 									<a href="/about/reviews" class="btn-normal flex-wrap flex-align-center">
 										<p>Read Reviews</p>

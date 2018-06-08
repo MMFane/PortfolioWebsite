@@ -144,19 +144,23 @@ ul li {
 	width: 100%;
 	margin-top: -75px;
 	padding: 0 0 75px 0;
+	-webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+.casino-bg {
 	background-image: url(/images/casino.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	-webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
-	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
 }
 
 #resume, #reviews {
 	max-width: 1600px;
 	margin: 0 auto;
 	overflow: hidden;
+	border-radius: 20px;
 }
 
 .btn-normal {
@@ -227,12 +231,15 @@ ul li {
 	////////////////////////////////////////////	*/ 
 
 #lang-soft-edu {
-	padding: 0 7% 75px 7%;
+	padding: 0 10% 125px 10%;
 	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
 	background-attachment: fixed;
-	margin-top: -50px;
+	margin: -42px 0 100px 0;
+	z-index: -1;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 #lang-soft-edu h4,{
@@ -361,8 +368,11 @@ ul li {
 	min-height: 50px;
 	text-align: center;
 	padding: 0.5em 0 1.5em 0;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
+
+.banner-tilt {
+	-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 50%);
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 50%)
 }
 
 .border-top {
@@ -895,7 +905,6 @@ RESPONSIVENESS
 		display: inline-block;
 		border-radius: 50%;
 		padding: 1.5em;
-		background-color: #cc6666;
 		margin: 50px auto 0 auto;
 	}
 
@@ -913,6 +922,10 @@ RESPONSIVENESS
 
 	#about .speech-bubble:last-of-type {
 		margin-left: 0;
+	}
+
+	#lang-soft-edu {
+		padding-bottom: 200px;
 	}
 
 	.gallery-sizer, .gallery-item {
@@ -951,7 +964,7 @@ RESPONSIVENESS
 		padding: 3em 0;
 	}
 
-	.banner-red {
+	.banner {
 		padding: 0.25em 0;
 	}
 
