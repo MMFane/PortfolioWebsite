@@ -164,6 +164,10 @@ ul li {
 	border-radius: 20px;
 }
 
+ #reviews {
+	 max-width: 1600px;
+ }
+
 .btn-normal {
 	color: #8d2f2f;
 	margin-top: 1em;
