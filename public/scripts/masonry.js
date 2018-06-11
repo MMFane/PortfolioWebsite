@@ -54,6 +54,26 @@ btnRight.on("click", function (event) {
     changeImage();
 });
 
+veil.on("swipeleft", function () {
+    event.stopPropagation();
+    if (ptr > 0) {
+        ptr--;
+    } else {
+        ptr = total - 1;
+    }
+    changeImage();
+});
+
+veil.on("swiperight", function () {
+    event.stopPropagation();
+    if (ptr < total - 1) {
+        ptr++;
+    } else {
+        ptr = 0;
+    }
+    changeImage();
+});
+
 veil.on("click", function () {
     $(this).css('display', 'none');
 });
