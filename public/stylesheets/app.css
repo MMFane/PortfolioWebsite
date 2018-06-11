@@ -662,6 +662,10 @@ ul li {
 	border-radius: 5px;
 }
 
+#btn-container {
+	font-family: "Roboto Mono", monospace;
+}
+
 .gallery-btn:hover {
 	background-color: lightgrey;
 }
@@ -696,6 +700,7 @@ ul li {
 	width: 90%;
 	height: 90%;
 }
+
 .transition-image {
 	width: 0;
 	height: 0;
@@ -873,6 +878,34 @@ ul li {
 /* 	////////////////////////////////////////////
 RESPONSIVENESS
 ////////////////////////////////////////////	*/ 
+
+@media screen and (max-width : 1557px){
+	#reviews .speech-bubble {
+		border-top-right-radius: 25px;
+		border-bottom-left-radius: 0;
+	}
+
+	.project-img {
+		width: 200px;
+	}
+	
+	.zoom-image, .transition-image{
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		left: 0;
+		top: 100;
+		transition: transform 0.25s ease;
+	}
+
+	#btn-container {
+		position: absolute;
+		top: 70%; 
+		left:10%;
+		right: 10%;
+	}
+}
+
 @media screen and (max-width : 760px){
 
 	#projects {
@@ -975,39 +1008,6 @@ RESPONSIVENESS
 	iframe {
 		width: 320;
 		height: 180;
-	}
-
-	.zoom-image, .transition-image{
-		width: 100%;
-		height: 50%;
-		position: absolute;
-		left: 0;
-		top: 100;
-	}
-
-	.transition-image {
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		display: none;
-		transition: all 0.25s ease;
-	}
-
-	#btn-container {
-		position: absolute;
-		top: 550px; 
-		left:25%;
-	}
-}
-
-@media screen and (max-width : 1557px){
-	#reviews .speech-bubble {
-		border-top-right-radius: 25px;
-		border-bottom-left-radius: 0;
-	}
-
-	.project-img {
-		width: 200px;
 	}
 }
 

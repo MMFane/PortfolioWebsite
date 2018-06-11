@@ -12,10 +12,12 @@ var $grid = $('.gallery-grid').imagesLoaded(function () {
 
 
 // lightbox functionality
-const $images = $('.zoomable');
-const btnLeft = $('#prev');
-const btnRight = $('#next');
-const veil = $('.veil');
+let $images = $('.zoomable');
+let zoomImage = $('.zoom-image');
+let transImage = $('.transition-image');
+let btnLeft = $('#prev');
+let btnRight = $('#next');
+let veil = $('.veil');
 let imageArray = [];
 let ptr = 0;
 let currIdxText = $('#index');
@@ -25,23 +27,62 @@ $images.each(function(index) {
     imageArray.push( $(this).attr('src'));
 });
 const total = imageArray.length;
-totalNumImgs.text(`${total}`);
+if (total < 10) {
+    totalNumImgs.text(`0${total}`);
+} else {
+    totalNumImgs.text(`${total}`);
+}
 
 // events
+
+// click an image to bring up veil and zoomed image
 $images.on("click", function () {
     ptr = imageArray.indexOf($(this).attr('src'));
-    changeImage();
+    changeImage(zoomImage);
     veil.css('display', 'block');
 });
 
-btnLeft.on("click", prevImage);
+// scrolling left and right through imageArray
+    // with buttons
+btnLeft.on("click", clickImgPrev);
+btnRight.on("click", clickImgNext);
 
-btnRight.on("click", nextImage);
+function clickImgNext(event) {
+    nextImage(event);
+    changeImage(zoomImage);
+}
 
-veil.on("swipeleft", translateImageLeft);
+function clickImgPrev(event) {
+    prevImage(event);
+    changeImage(zoomImage);
+}
 
-veil.on("swiperight", translateImageRight);
+    // with swiping
+// veil.on("swipeleft", swipeImgNext);
+// veil.on("swiperight", swipeImgPrev);
 
+// function swipeImgPrev(event) {
+//     prevImage(event);
+//     setTransImg();
+//     setZoomImg();
+//     translateImgLeft(zoomImage);
+//     showImg(zoomImage);
+//     translateImgRight(transImage);
+//     translateImgCenter(zoomImage);
+//     resetTransImg();
+// }
+
+// function swipeImgNext(event) {
+//     nextImage(event);
+//     setTransImg();
+//     setZoomImg();
+//     translateImgRight(zoomImage);
+//     setTimeout(showImg(zoomImage), 250);
+//     translateImgLeft(transImage);
+//     translateImgCenter(zoomImage);
+// }
+
+// exiting veil and zoomed image
 veil.on("click", function () {
     $(this).css('display', 'none');
 });
@@ -53,9 +94,13 @@ document.addEventListener('keydown', function (event) {
 });
 
 // helper functions
-function changeImage() {
-    currIdxText.text(`${ptr + 1}`);
-    $('.zoom-image').css('background-image', `url(${imageArray[ptr]}`);
+function changeImage(image) {
+    if (ptr < 9) {
+        currIdxText.text(`0${ptr + 1}`);
+    } else {
+        currIdxText.text(`${ptr + 1}`);
+    }
+    image.css('background-image', `url(${imageArray[ptr]}`);
 }
 
 function prevImage(event) {
@@ -65,7 +110,6 @@ function prevImage(event) {
     } else {
         ptr = total - 1;
     }
-    changeImage();
 }
 
 function nextImage(event) {
@@ -75,47 +119,39 @@ function nextImage(event) {
     } else {
         ptr = 0;
     }
-    changeImage();
 }
 
-function translateImageLeft(event) {
-    changeMainImgPrev(event);
-    translateTransImgLeft();
-    setTimeout(resetTransImg, 250);
-}
+// function setTransImg() {
+//     changeImage(transImage);
+//     showImg(transImage);
+// }
 
-function translateImageRight(event) {
-    changeMainImgNext(event);
-    translateTransImgRight();
-    setTimeout(resetTransImg, 250);
-}
+// function setZoomImg(event) {
+//     hideImg(zoomImage);
+//     changeImage(zoomImage);
+// }
 
-function changeMainImgPrev(event) {
-    showTransImg();
-    prevImage(event);
-}
+// function resetTransImg() {
+//     hideImg(transImage);
+//     translateImgCenter(transImage);
+// }
 
-function changeMainImgNext(event) {
-    showTransImg();
-    nextImage(event);
-}
+// function showImg(image) {
+//     image.css('display', 'block');
+// }
 
-function showTransImg() {
-    $('.transition-image').css('background-image', `url(${imageArray[ptr]}`);
-    $('.transition-image').css('display', 'block');
-    $('.zoom-image').css('display', 'none');
-}
+// function hideImg(image) {
+//     image.css('display', 'none');
+// }
 
-function translateTransImgLeft() {
-    $('.transition-image').css("transform", "translate(-400px,0)");
-}
+// function translateImgLeft(image) {
+//     image.css("transform", "translate(-400px,0)");
+// }
 
-function translateTransImgRight() {
-    $('.transition-image').css("transform", "translate(400px,0)");
-}
+// function translateImgRight(image) {
+//     image.css("transform", "translate(400px,0)");
+// }
 
-function resetTransImg() {
-    $('.transition-image').css('background-image', `none`);
-    $('.transition-image').css("transform", "translate(0,0)");
-    $('.zoom-image').css('display', 'block');
-}
+// function translateImgCenter(image) {
+//     image.css("transform", "translate(0,0)");
+// }
