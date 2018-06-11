@@ -689,13 +689,17 @@ ul li {
 	background-color: rgba(0, 0, 0, 0.75);	
 }
 
-.zoom-image {
+.zoom-image, .transition-image {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 90%;
 	height: 90%;
-	background-image: url(/images/ProjectImages/Images_WildTangentCasino/Final/CasinoHostess.jpg);
+}
+.transition-image {
+	width: 0;
+	height: 0;
+	display: none;
 }
 
 .fullscreen {
@@ -973,9 +977,26 @@ RESPONSIVENESS
 		height: 180;
 	}
 
-	.zoom-image {
+	.zoom-image, .transition-image{
 		width: 100%;
 		height: 50%;
+		position: absolute;
+		left: 0;
+		top: 100;
+	}
+
+	.transition-image {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: none;
+		transition: all 0.25s ease;
+	}
+
+	#btn-container {
+		position: absolute;
+		top: 550px; 
+		left:25%;
 	}
 }
 
