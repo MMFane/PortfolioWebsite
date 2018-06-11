@@ -894,7 +894,7 @@ RESPONSIVENESS
 		height: 50%;
 		position: absolute;
 		left: 0;
-		top: 100;
+		top: 15%;
 		transition: transform 0.25s ease;
 	}
 
