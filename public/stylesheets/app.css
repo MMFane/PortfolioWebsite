@@ -726,6 +726,10 @@ ul li {
     height: 100%;
 }
 
+.no-touch {
+	touch-action: none;
+}
+
 /* 	////////////////////////////////////////////
 	FOOTER - contact info and copyright claim
 	////////////////////////////////////////////	*/

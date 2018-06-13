@@ -58,29 +58,29 @@ function clickImgPrev(event) {
 }
 
     // with swiping
-// veil.on("swipeleft", swipeImgNext);
-// veil.on("swiperight", swipeImgPrev);
+veil.on("swipeleft", swipeImgNext);
+veil.on("swiperight", swipeImgPrev);
 
-// function swipeImgPrev(event) {
-//     prevImage(event);
-//     setTransImg();
-//     setZoomImg();
-//     translateImgLeft(zoomImage);
-//     showImg(zoomImage);
-//     translateImgRight(transImage);
-//     translateImgCenter(zoomImage);
-//     resetTransImg();
-// }
+function swipeImgPrev(event) {
+    prevImage(event);
+    setTransImg();
+    setZoomImg();
+    translateImgLeft(zoomImage);
+    showImg(zoomImage);
+    translateImgRight(transImage);
+    translateImgCenter(zoomImage);
+    resetTransImg();
+}
 
-// function swipeImgNext(event) {
-//     nextImage(event);
-//     setTransImg();
-//     setZoomImg();
-//     translateImgRight(zoomImage);
-//     setTimeout(showImg(zoomImage), 250);
-//     translateImgLeft(transImage);
-//     translateImgCenter(zoomImage);
-// }
+function swipeImgNext(event) {
+    nextImage(event);
+    setTransImg();
+    setZoomImg();
+    translateImgRight(zoomImage);
+    setTimeout(showImg(zoomImage), 250);
+    translateImgLeft(transImage);
+    translateImgCenter(zoomImage);
+}
 
 // exiting veil and zoomed image
 veil.on("click", function () {
@@ -121,37 +121,37 @@ function nextImage(event) {
     }
 }
 
-// function setTransImg() {
-//     changeImage(transImage);
-//     showImg(transImage);
-// }
+function setTransImg() {
+    changeImage(transImage);
+    showImg(transImage);
+}
 
-// function setZoomImg(event) {
-//     hideImg(zoomImage);
-//     changeImage(zoomImage);
-// }
+function setZoomImg(event) {
+    hideImg(zoomImage);
+    changeImage(zoomImage);
+}
 
-// function resetTransImg() {
-//     hideImg(transImage);
-//     translateImgCenter(transImage);
-// }
+function resetTransImg() {
+    hideImg(transImage);
+    translateImgCenter(transImage);
+}
 
-// function showImg(image) {
-//     image.css('display', 'block');
-// }
+function showImg(image) {
+    image.css('display', 'block');
+}
 
-// function hideImg(image) {
-//     image.css('display', 'none');
-// }
+function hideImg(image) {
+    image.css('display', 'none');
+}
 
-// function translateImgLeft(image) {
-//     image.css("transform", "translate(-400px,0)");
-// }
+function translateImgLeft(image) {
+    image.css("transform", "translate(-400px,0)");
+}
 
-// function translateImgRight(image) {
-//     image.css("transform", "translate(400px,0)");
-// }
+function translateImgRight(image) {
+    image.css("transform", "translate(400px,0)");
+}
 
-// function translateImgCenter(image) {
-//     image.css("transform", "translate(0,0)");
-// }
+function translateImgCenter(image) {
+    image.css("transform", "translate(0,0)");
+}
