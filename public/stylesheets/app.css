@@ -11,14 +11,6 @@ html, body {
 
 body {
 	min-height: 100%;
-	/* display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto auto 1fr 1fr;
-	grid-template-areas: 
-		"header header header"
-		"main main main"
-		"contact contact contact"
-		"footer footer footer"; */
 }
 
 h1 {
@@ -233,12 +225,22 @@ ul li {
 
 .project-img:hover {
 	margin-top: 10px;
-	transform: rotate(5deg);
-	width: 350px;
+	transform: rotate(5deg) scale(1.1, 1.1);
 }
 
 .project-img.left:hover {
-	transform: rotate(-5deg);
+	transform: rotate(-5deg) scale(1.1, 1.1);
+}
+
+.project-img.secondary {
+	transform: scale(0.6, 0.6);
+	mix-blend-mode: multiply;
+}
+
+.secondary {
+	transform: scale(0.6, 0.6);
+	mix-blend-mode: overlay;
+	opacity: 0.75;
 }
 
 /* 	////////////////////////////////////////////
