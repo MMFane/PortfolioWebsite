@@ -144,9 +144,8 @@ ul li {
 	width: 100%;
 	margin-top: -75px;
 	padding: 0 0 75px 0;
-	z-index: -1;
-	-webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
-	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 95%);
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 95%);
 }
 
 .casino-bg {
