@@ -1,0 +1,110 @@
+<% include ./partials/nav.ejs %>
+<% include ./partials/header.ejs %>
+
+    <div class="veil">
+        <div class="no-touch flex-wrap flex-col flex-justify-center flex-align-center fullscreen">
+            <div id="zoom-image">
+            </div>
+            <div id="transition-image" class="hide">
+            </div>
+            <div id="btn-container" class="flex-wrap flex-justify-center flex-align-center">
+                <btn id="prev" class="gallery-btn" style="padding-right:3px;">
+                    <i class="fas fa-caret-left"></i>
+                </btn>
+                <p id="index">0</p>
+                <p>/</p>
+                <p id="total">0</p>
+                <btn id="next" class="gallery-btn" style="padding-left:3px;">
+                    <i class="fas fa-caret-right"></i>
+                </btn>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="project-header" src="/images/SectionHeaders/header_spellslingers.png" alt="SpellSlinger Project" />
+        <div class="flex-wrap store-badge-wrap flex-justify-center" style="margin-bottom:25px">
+            <a href="http://legacygamesystems.com/our-demo-game-is-getting-a-makeover/" target="_blank" class="btn-badge flex-wrap flex-align-center">
+                <i class="fas fa-hourglass-half"></i>
+                <div class="flex-wrap flex-col flex-align-start">
+                    <p class="btn-badge-first-p">Still in production</p>
+                    <p>
+                        <strong>View Info</strong>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="section-card light-background">
+            <div class="gallery-grid">
+                <div class="gallery-sizer"></div>
+                <div class="gutter-sizer"></div>
+                <div class="gallery-item gallery-item-width-2">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Final/FactionDuelScreens.jpg" alt="Four Themed Faction Duel Screens"
+                        />
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-width-2">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Final/FactionSymbols.jpg" alt="Different rendering levels for the six faction symbols"
+                        />
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-width-2">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Final/Unity_Menus.jpg" alt="Unity screens, including menus and one faction screen"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="section-header" src="/images/SectionHeaders/header_working.png" alt="Working Images" />
+        <div class="section-card light-background">
+            <div class="gallery-grid">
+                <div class="gallery-sizer"></div>
+                <div class="gutter-sizer"></div>
+                <div class="gallery-item gallery-item-width-4">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages//Images_SpellSlingers/Dev/FlowChart.jpg" alt="SpellSlingers UX flowchart"
+                        />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/2.jpg" alt="Prototype login screen" />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/4.jpg" alt="Prototype main menu" />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/5.jpg" alt="Prototype Duel Story" />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/6.jpg" alt="Prototype join duel screen" />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/7.jpg" alt="Prototype duel results screen" />
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/8.jpg" alt="Prototype duel stats screen" />
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-width-4">
+                    <div class="gallery-img">
+                        <img class="zoomable" src="/images/ProjectImages/Images_SpellSlingers/Dev/Mockup_Wyrddin.jpg" alt="Viual development for Wyrddin Way faction duel screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<% include ./partials/footer.ejs %>
+

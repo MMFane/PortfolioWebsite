@@ -695,12 +695,9 @@ ul li {
 	background-position: center;
 	width: 90%;
 	height: 90%;
-	/* transition: all 1.0s ease; */
-}
-
-#transition-image {
-	transform: translateX(0);
-	display: none;
+	left: 0px;
+	display: block;
+    transition: transform 0.1s ease, left 0.1s ease; 
 }
 
 .fullscreen {
@@ -1008,6 +1005,14 @@ RESPONSIVENESS
 		width: 320;
 		height: 180;
 	}
+
+	#transition-image.move-left, #zoom-image.move-left { 
+		transform: translatex(-400px);
+	}
+
+	#transition-image.move-right, #zoom-image.move-right { 
+		transform: translatex(400px);
+	}
 }
 
 /* Fix margins and padding for Edge, which does not currently support clip outside of svg */
@@ -1058,6 +1063,6 @@ RESPONSIVENESS
 	margin-right: 20px;
 }
 
-.anim-center {
-	transition: transform 0.25s ease, left 0.25s ease;
+#zoom-image.hide, #transition-image.hide  {
+	display: none;
 }

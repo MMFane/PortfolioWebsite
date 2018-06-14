@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/test", function (req, res) {
-    res.render("MASONRY_TEST");
+    res.render("ANIMATIONTEST");
 });
 
 app.get("/projects/wildtangent-casino", function(req, res) {

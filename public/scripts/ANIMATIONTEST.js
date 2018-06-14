@@ -50,8 +50,61 @@ $images.on("click", function () {
 // btnLeft.on("click", clickImgPrev);
 // btnRight.on("click", clickImgNext);
 
-btnLeft.on("click", swipeImgPrev);
-btnRight.on("click", swipeImgNext);
+btnLeft.on("click", function(event) {
+    event.stopPropagation();
+    zoomImage.toggleClass("hide");
+    setTimeout(function () {
+        zoomImage.toggleClass("move-left")
+    }, 100);
+    setTimeout(function () {
+        prevImage(event);
+        changeImage(zoomImage);
+        zoomImage.toggleClass("hide");
+    }, 200);
+    setTimeout(function () {
+        zoomImage.toggleClass("move-left")
+    }, 300);
+
+    transImage.toggleClass("hide")
+    setTimeout(function () {
+        transImage.toggleClass("move-right");
+    }, 100);
+    setTimeout(function () {
+        transImage.toggleClass("hide")
+    }, 200);
+    setTimeout(function () {
+        transImage.css('background-image', `url(${imageArray[ptr]}`);
+        transImage.toggleClass("move-right");
+    }, 300);
+});
+
+btnRight.on("click", function(event) {
+    event.stopPropagation();
+    zoomImage.toggleClass("hide");
+    setTimeout(function () {
+        zoomImage.toggleClass("move-right")
+    }, 100);
+    setTimeout(function () {
+        nextImage(event);
+        changeImage(zoomImage);
+        zoomImage.toggleClass("hide");
+    }, 200);
+    setTimeout(function () {
+        zoomImage.toggleClass("move-right")
+    }, 300);
+
+    transImage.toggleClass("hide")
+    setTimeout(function () {
+        transImage.toggleClass("move-left");
+    }, 100);
+    setTimeout(function () {
+        transImage.toggleClass("hide")
+    }, 200);
+    setTimeout(function () {
+        transImage.css('background-image', `url(${imageArray[ptr]}`);
+        transImage.toggleClass("move-left");
+    }, 300);
+});
 
 function clickImgNext(event) {
     nextImage(event);
@@ -64,8 +117,60 @@ function clickImgPrev(event) {
 }
 
     // with swiping
-// veil.on("swipeleft", swipeImgNext);
-// veil.on("swiperight", swipeImgPrev);
+veil.on("swipeleft", function(event) {
+    event.stopPropagation();
+    zoomImage.toggleClass("hide");
+    setTimeout(function () {
+        zoomImage.toggleClass("move-right")
+    }, 100);
+    setTimeout(function () {
+        nextImage(event);
+        changeImage(zoomImage);
+        zoomImage.toggleClass("hide");
+    }, 200);
+    setTimeout(function () {
+        zoomImage.toggleClass("move-right")
+    }, 300);
+
+    transImage.toggleClass("hide")
+    setTimeout(function () {
+        transImage.toggleClass("move-left");
+    }, 100);
+    setTimeout(function () {
+        transImage.toggleClass("hide")
+    }, 200);
+    setTimeout(function () {
+        transImage.css('background-image', `url(${imageArray[ptr]}`);
+        transImage.toggleClass("move-left");
+    }, 300);
+});
+veil.on("swiperight", function(event) {
+    event.stopPropagation();
+    zoomImage.toggleClass("hide");
+    setTimeout(function () {
+        zoomImage.toggleClass("move-left")
+    }, 100);
+    setTimeout(function () {
+        prevImage(event);
+        changeImage(zoomImage);
+        zoomImage.toggleClass("hide");
+    }, 200);
+    setTimeout(function () {
+        zoomImage.toggleClass("move-left")
+    }, 300);
+
+    transImage.toggleClass("hide")
+    setTimeout(function () {
+        transImage.toggleClass("move-right");
+    }, 100);
+    setTimeout(function () {
+        transImage.toggleClass("hide")
+    }, 200);
+    setTimeout(function () {
+        transImage.css('background-image', `url(${imageArray[ptr]}`);
+        transImage.toggleClass("move-right");
+    }, 300);
+});
 
 function swipeImgPrev(event) {
     prevImage(event);
@@ -106,7 +211,7 @@ function changeImage(image) {
 }
 
 function prevImage(event) {
-    event.stopPropagation();
+    // event.stopPropagation();
     if (ptr > 0) {
         ptr--;
     } else {
@@ -115,7 +220,7 @@ function prevImage(event) {
 }
 
 function nextImage(event) {
-    event.stopPropagation();
+    // event.stopPropagation();
     if (ptr < total - 1) {
         ptr++;
     } else {
@@ -152,7 +257,6 @@ function hideImg(image) {
 }
 
 function translateImgLeft(image) {
-    // image.removeClass("TEST-CENTER TEST-RIGHT").addClass("TEST-LEFT");
     image.animate({
         left: "-400px"
     }, 250);
@@ -160,7 +264,6 @@ function translateImgLeft(image) {
 }
 
 function translateImgRight(image) {
-    // image.removeClass("TEST-LEFT TEST-CENTER").addClass("TEST-RIGHT");
     image.animate({
         left: "400px"
     }, 250);
@@ -168,7 +271,6 @@ function translateImgRight(image) {
 }
 
 function translateImgCenter(image) {
-    // image.removeClass("TEST-LEFT TEST-RIGHT").addClass("TEST-CENTER");
     image.animate({
         left: "0px"
     }, 250);
