@@ -4,7 +4,6 @@ html, body {
 	width: 100%;
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
-	letter-spacing: 1px;
 	text-align: center;
 	color: white;
 }
@@ -128,7 +127,7 @@ ul li {
 	margin: 100px auto 1.25em auto;
 }
 
-#projects, #resume, #about, #reviews {
+#projects, #resume, #resume-start, #about, #reviews {
 	grid-column: 1 / span 3;
 }
 
@@ -260,7 +259,6 @@ ul li {
 }
 
 #lang-soft-edu h4,{
-	color: white;
 	margin-top: 1.5em;
 }
 
@@ -281,7 +279,6 @@ ul li {
 .company-logo-wrap {
 	border-radius: 50%;
 	display: inline;
-	background-color: white;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -398,7 +395,6 @@ ul li {
 }
 
 .dark-red {
-	color: #dbc5c5;
 	background-color: #8c1919;
 }
 
@@ -408,7 +404,6 @@ ul li {
 }
 
 .banner h4 {
-	color: white;
 	margin: 1.25em;
 }
 
@@ -509,7 +504,6 @@ ul li {
 }
 
 .chip-body {
-	color: white;
 	padding: 0.5em;
 	width: auto;
 }
@@ -774,7 +768,7 @@ ul li {
 }
 
 .icon-link:active {
-	color: #6d1110;
+	color: #777;
 }
 
 .phone {
@@ -884,9 +878,30 @@ ul li {
 	max-width: 275px;
 }
 
+.width-25-percent {
+	width: 25%;
+}
+
 .padding-25 {
 	padding: 25px;
 }
+
+.padding-top-50 {
+	padding-top: 50px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-bottom-only-25 {
+	margin: 0 0 25px 0;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
 
 /* 	////////////////////////////////////////////
 RESPONSIVENESS
