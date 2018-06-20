@@ -138,8 +138,8 @@ ul li {
 	width: 100%;
 	margin-top: -75px;
 	padding: 0 0 75px 0;
-	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 95%);
-	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 95%);
+	-webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
+	clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
 }
 
 .casino-bg {
@@ -229,7 +229,7 @@ ul li {
 }
 
 .project-img:hover {
-	margin-top: 10px;
+	margin: 20px 0;
 	transform: rotate(5deg) scale(1.1, 1.1);
 }
 
@@ -267,8 +267,12 @@ ul li {
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-#lang-soft-edu h4,{
+#lang-soft-edu h4{
 	margin-top: 1.5em;
+}
+
+#lang-soft-edu h4, #lang-soft-edu h5 {
+	text-align: left;
 }
 
 .icon-circle {
@@ -320,7 +324,7 @@ ul li {
 }
 
 .med-background {
-	background-color: #ddd7da;
+	background-color: #bfb9bc;
 }
 
 .dark-background {
@@ -464,7 +468,9 @@ ul li {
 #about .speech-bubble {
 	border-top-right-radius: 25px;
 	border-top-left-radius: 0;
+	border: none;
 	margin-top: 25px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
 }
 
 #about .speech-bubble:last-of-type {
@@ -480,16 +486,16 @@ ul li {
 }
 
 #about .chip-body {
-	color: #8c1919;
+	color: white;
 }
 
 #about .chip-tag {
-	color: #ddd7da;
-	background-color: #8c1919;
+	color: #bfb9bc;
+	background-color: white;
 }
 
 #about .chip {
-	border-color: #8c1919;
+	border-color: white;
 }
 
 .review img {
@@ -532,6 +538,11 @@ ul li {
 .chip-tag p {
 	margin: 0;
 }
+
+.chip-tag i {
+	font-size: 1.25em;
+}
+
 
 .chip-wrap {
 	margin-top: 10px;
@@ -759,8 +770,6 @@ ul li {
 		transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 	padding: 30px 0;
-	border-top: 1px solid #850606;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 	margin-top: 150px;
 	-webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
@@ -773,6 +782,7 @@ ul li {
 
 .icon-link {
 	color: #dbc5c5;
+	text-decoration: none;
 }
 
 .icon-link:hover {
@@ -795,7 +805,7 @@ ul li {
 
 .footer {
 	grid-area: footer;
-	margin-top: -30px;
+	margin-top: -35px;
 	color: #ee2524;
 	background-color: #8c1919;
 	padding: 30px 16px 16px 16px;
@@ -948,7 +958,9 @@ RESPONSIVENESS
 @media screen and (max-width : 760px){
 
 	#projects {
-		margin-top: -80px;
+		margin-top: -62px;
+		-webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 95%);
+		clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 95%);
 	}
 	
 	body {
@@ -1033,7 +1045,9 @@ RESPONSIVENESS
 	}
 
 	#lang-soft-edu {
-		padding-bottom: 200px;
+		padding-bottom: 100px;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 	}
 
 	.gallery-sizer, .gallery-item {
