@@ -23,7 +23,7 @@ h1 {
 
 h2 {
 	color: #dbc5c5;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -265,6 +265,7 @@ ul li {
 	z-index: -1;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	text-align: left;
 }
 
 #lang-soft-edu h4{
@@ -458,9 +459,8 @@ ul li {
 
 .speech-bubble {
 	max-width: 1100px;
-	border: 1px solid rgba(220, 210, 210, 0.5);
 	border-radius: 25px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.05); 
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
 	border-top-right-radius: 0;
 	padding: 25px;
 }
@@ -468,9 +468,7 @@ ul li {
 #about .speech-bubble {
 	border-top-right-radius: 25px;
 	border-top-left-radius: 0;
-	border: none;
 	margin-top: 25px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
 }
 
 #about .speech-bubble:last-of-type {
@@ -916,12 +914,36 @@ ul li {
 	margin-top: 10px;
 }
 
+.margin-top-50 {
+	margin-top: 50px;
+}
+
 .margin-bottom-only-25 {
 	margin: 0 0 25px 0;
 }
 
 .margin-bottom-20 {
 	margin-bottom: 20px;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
+.margin-top-neg-100 {
+	margin-top: -100px;
+}
+
+.margin-right-50 {
+	margin-right: 50px;
+}
+
+.margin-right-100 {
+	margin-right: 100px;
+}
+
+.opacity-33 {
+	opacity: 0.3;
 }
 
 
@@ -1009,7 +1031,7 @@ RESPONSIVENESS
 	}
 
 	h2 {
-		font-size: 1em;
+		font-size: 1.25em;
 	}
 
 	.signature {
@@ -1104,15 +1126,19 @@ RESPONSIVENESS
 
 /* UNORDERED */
 
-.inset-section-light {
+.inset-section {
 	margin: 25px;
-	border: 1px solid #ddd7da;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
 
-.inset-section-light ul {
+.inset-section ul {
 	margin-right: 20px;
+}
+
+.inset-section h5 {
+	padding-top: 20px;
 }
 
 .anim-center {
