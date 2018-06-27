@@ -31,6 +31,10 @@ app.get("/about/reviews", function(req, res) {
     res.render("reviews");
 });
 
+app.get("/alternate", function (req, res) {
+    res.render("AltStylePage");
+});
+
 app.listen(port, function() {
     console.log("Portfolio: Server is go");
 });
