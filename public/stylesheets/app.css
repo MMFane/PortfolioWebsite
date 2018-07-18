@@ -678,8 +678,8 @@ ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: grey;
-	border: 1px solid white;
+	background-color: #ee2524;
+	border: 1px solid #ff6160;
 	border-radius: 5px;
 }
 
@@ -688,13 +688,13 @@ ul li {
 }
 
 .gallery-btn:hover {
-	background-color: lightgrey;
+	background-color: #ff4342;
 }
 
 .gallery-btn:active {
-	background-color: #555;
-	color: grey;
-	border-color:grey;
+	background-color: #b20000;
+	color: #ff4342;
+	border-color: #ff4342;
 }
 
 .brief-section {
@@ -966,14 +966,23 @@ RESPONSIVENESS
 		height: 50%;
 		position: absolute;
 		left: 0;
-		top: 15%;
+		top: 10%;
+	}
+
+	#btn-container, #description {
+		position: absolute;
+		left:10%;
+		right: 10%;
 	}
 
 	#btn-container {
-		position: absolute;
-		top: 70%; 
-		left:10%;
-		right: 10%;
+		top: 85%; 
+	}
+
+	#description {
+		top: 60%;
+		padding: 10px;
+		background: rgba(0, 0, 0, 0.5)
 	}
 }
 

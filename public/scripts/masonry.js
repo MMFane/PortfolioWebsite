@@ -10,23 +10,21 @@ var $grid = $('.gallery-grid').imagesLoaded(function () {
     });
 });
 
-
 // lightbox functionality
-let $images = $('.zoomable');
-let zoomImage = $('#zoom-image');
-let transImage = $('#transition-image');
-let btnLeft = $('#prev');
-let btnRight = $('#next');
-let veil = $('.veil');
+const $images = $('.zoomable');
+const zoomImage = $('#zoom-image');
+const transImage = $('#transition-image');
+const description = document.querySelector('#description')
+const btnLeft = $('#prev');
+const btnRight = $('#next');
+const veil = $('.veil');
 let imageArray = [];
 let ptr = 0;
 let currIdxText = $('#index');
 let totalNumImgs = $('#total');
 
-console.log(zoomImage);
-
-$images.each(function(index) {
-    imageArray.push( $(this).attr('src'));
+$images.each(function (index) {
+    imageArray.push($(this));
 });
 const total = imageArray.length;
 if (total < 10) {
@@ -38,45 +36,49 @@ if (total < 10) {
 // events
 
 // click an image to bring up veil and zoomed image
-$images.on("click", function () {
-    ptr = imageArray.indexOf($(this).attr('src'));
+$images.on("click", function (e) {
+    ptr = imageArray.findIndex(function (item) {
+        return item.attr('alt') === e.target.getAttribute('alt')
+    });
+    description.textContent = e.target.dataset.description
     changeImage(zoomImage);
     changeImage(transImage);
+
     veil.css('display', 'block');
 });
 
 // scrolling left and right through imageArray
-    // with buttons
+// with buttons
 // btnLeft.on("click", clickImgPrev);
 // btnRight.on("click", clickImgNext);
 
 btnLeft.on("click", swipeImgPrev);
 btnRight.on("click", swipeImgNext);
 
-function clickImgNext(event) {
-    nextImage(event);
+function clickImgNext(e) {
+    nextImage(e);
     changeImage(zoomImage);
 }
 
-function clickImgPrev(event) {
-    prevImage(event);
+function clickImgPrev(e) {
+    prevImage(e);
     changeImage(zoomImage);
 }
 
-    // with swiping
+// with swiping
 // veil.on("swipeleft", swipeImgNext);
 // veil.on("swiperight", swipeImgPrev);
 
-function swipeImgPrev(event) {
-    prevImage(event);
+function swipeImgPrev(e) {
+    prevImage(e);
     stepOneRight();
     stepTwoRight();
     Reset();
     console.log(`----------`)
 }
 
-function swipeImgNext(event) {
-    nextImage(event);
+function swipeImgNext(e) {
+    nextImage(e);
     stepOneLeft();
     stepTwoLeft();
     Reset();
@@ -88,9 +90,9 @@ veil.on("click", function () {
     veil.css('display', 'none');
 });
 
-document.addEventListener('keydown', function (event) {
-    if (event.keyCode == 27 && veil.css('display', 'block')) {
-        veil.css('display', 'none'); 
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 27 && veil.css('display', 'block')) {
+        veil.css('display', 'none');
     }
 });
 
@@ -101,12 +103,12 @@ function changeImage(image) {
     } else {
         currIdxText.text(`${ptr + 1}`);
     }
-    image.css('background-image', `url(${imageArray[ptr]}`);
-    console.log(`Changing ${image.attr('id')}`);
+    image.css('background-image', `url(${imageArray[ptr].attr('src')}`);
+    description.textContent = imageArray[ptr][0].dataset.description
 }
 
-function prevImage(event) {
-    event.stopPropagation();
+function prevImage(e) {
+    e.stopPropagation();
     if (ptr > 0) {
         ptr--;
     } else {
@@ -114,8 +116,8 @@ function prevImage(event) {
     }
 }
 
-function nextImage(event) {
-    event.stopPropagation();
+function nextImage(e) {
+    e.stopPropagation();
     if (ptr < total - 1) {
         ptr++;
     } else {
