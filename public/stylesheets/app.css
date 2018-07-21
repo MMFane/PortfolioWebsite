@@ -720,12 +720,6 @@ ul li {
 	background-position: center;
 	width: 90%;
 	height: 90%;
-	/* transition: all 1.0s ease; */
-}
-
-#transition-image {
-	transform: translateX(0);
-	display: none;
 }
 
 .fullscreen {
