@@ -34,37 +34,37 @@ const images = [
 // const wtImages = [
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/CasinoHostess.jpg", 
-//         description: "", 
+//         description: "I was tasked with recreating the two images on the left with a different body and head angle, and adding more facial expressions and poses for this ad-related hostess character", 
 //         alt: "Casino Hostess Character", 
 //         size: "gallery-item-width-4"
 //     },
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/LobbyTiles.jpg", 
-//         description: "", 
+//         description: "These lobby tiles served a dual purpose as the ads for each game inside the casino app and the buttons to enter the games", 
 //         alt: "Lobby Tiles for Super Sevens and Polar Bowler", 
 //         size: "gallery-item-width-2"
 //     },
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_playscreen.jpg", 
-//         description: "", 
+//         description: "I created this playscreen to closely match the alley of the original polar bowler app. PB the polar bear would slam into the pins below the screen and the Strike symbol scoring meter would pop up every time the player won a match with the strike X symbol", 
 //         alt: "Polar Bowler Play Screen", 
 //         size: "gallery-item-width-4"
 //     },
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_sympage.jpg", 
-//         description: "", 
+//         description: "I created all these symbols to read most important to least important starting with PB the polar bear. All symbols were layered for animation and created in Illustrator so they could be exported at large sizes. The wild crate breaks apart and flings 1 - 5 snowballs onto other reels, which also become wild", 
 //         alt: "Polar Bowler Symbols", 
 //         size: "gallery-item-width-2"
 //     },
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_freespins.jpg", 
-//         description: "", 
+//         description: "I designed the polar bowler free spins screen to look like a typical pins setup with a reverse pyramid of reels. When PB the polar bear lands, he knocks the remaining pin away in a cover-the-reels bonus", 
 //         alt: "Polar Bowler Free Spins Screen", 
 //         size: "gallery-item-width-2"
 //     },
 //     {
 //         src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_bonusgame.jpg", 
-//         description: "", 
+//         description: "The Polar Bowler second screen bonus was a physics-based bowling minigame in which the player can use skill to win more points by flicking PB the polar bear at the pins down the lane and knocking over as many as they can in three turns", 
 //         alt: "Polar Bowler Bonus Screen", 
 //         size: "gallery-item-width-2"
 //     },
@@ -179,4 +179,5 @@ const populateImages = (array, location) => {
 
 if (window.location.href === 'http://localhost:3000/projects/stellar-fortune')
     populateImages(images, '#final-art')
+
 loadImages()

@@ -1,0 +1,38 @@
+wildTangentArray = [
+    {src: "/images/ProjectImages/Images_WildTangentCasino/Final/CasinoHostess.jpg", description: "", alt: "Casino Hostess Character", size: "gallery-item-width-4"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/LobbyTiles.jpg", description: "", alt: "Lobby Tiles for Super Sevens and Polar Bowler", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_playscreen.jpg", description: "", alt: "Polar Bowler Play Screen", size: "gallery-item-width-4"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_sympage.jpg", description: "", alt: "Polar Bowler Symbols", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_freespins.jpg", description: "", alt: "Polar Bowler Free Spins Screen", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_bonusgame.jpg", description: "", alt: "Polar Bowler Bonus Screen", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/SuperSevens_playscreen.jpg", description: "", alt: "Super Sevens Play Screen", size: "gallery-item-width-4"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/PolarBowler_dialogs.jpg", description: "", alt: "Polar Bowler Unity Dialogs", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Final/SuperSevens_sympage.jpg", description: "", alt: "Super Sevens Symbols", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_LobbyTile_Dev.jpg", description: "", alt: "Polar Bowler Lobby Tile Development", size: "gallery-item-width-4"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_Dev_playscreen.jpg", description: "", alt: "Polar Bowler Play Screen Development", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_Sympage_Thumbs.jpg", description: "", alt: "Polar Bowler Symbol Thumbnails", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_SymbolStyle.jpg", description: "", alt: "Polar Bowler Symbol Style Development", size: "gallery-item-width-4"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_FS_Dev.jpg", description: "", alt: "Polar Bowler Free Spins storyboard", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_Dev_playscreen.jpg", description: "", alt: "Polar Bowler Play Screen Development", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/PolarBowler_Dev_Bonus.jpg", description: "", alt: "Polar Bowler Bonus Game Storyboard", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/SuperSevens_Dev_ReelPlacement.jpg", description: "", alt: "Super Sevens Play Screen Development", size: "gallery-item-width-2"
+    }
+{src: "/images/ProjectImages/Images_WildTangentCasino/Dev/SuperSevens_Dev_Symbols.jpg", description: "", alt: "Black and White Super Sevens Symbol Development", size: "gallery-item-width-2"
+    }
+]
