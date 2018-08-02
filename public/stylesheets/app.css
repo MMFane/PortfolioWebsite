@@ -694,7 +694,7 @@ ul li {
 }
 
 #description {
-	padding: 10px;
+	padding: 10px 100px;
 	margin: 7px 0;
 	background: rgba(0, 0, 0, 0.85);
 	opacity: 0.25;
@@ -947,6 +947,10 @@ ul li {
 
 .margin-top-neg-100 {
 	margin-top: -100px;
+}
+
+.margin-top-neg-75 {
+	margin-top: -75px;
 }
 
 .margin-right-50 {
