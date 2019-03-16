@@ -1,0 +1,16 @@
+:root {
+  --color-main: #ee2524;
+  --color-main-dark: #8c1919;
+  --color-main-light: #dbc5c5;
+  --color-main-desat: #9f939;
+  --color-light-grey: #bfb9bc;
+  --color-dark-grey: #222;
+  --color-med-grey: #999;
+  --color-bg-light: #f1ebee;
+  --color-bg-dark: #c6bcc1;
+  --color-company-img: #a97e7e;
+  --color-gallery-btn: #ff6160;
+  --color-gallery-btn-light: #ff4342;
+  --color-gallery-btn-dark: #b20000;
+  --color-icon-link-active: #777;
+}

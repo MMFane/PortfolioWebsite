@@ -2,47 +2,25 @@
 <% include ./partials/header.ejs %>
 
 			<div class="main">
-				<div id="projects" class="casino-bg">
-					<div class="flex-wrap flex-justify-center">
-						<div class="flex flex-col flex-justify-center flex-align-center margin-right-100">
-							<img class="project-header" src="/images/SectionHeaders/header_wildtangent_white.png" alt="WildTangent Casino Project"/>
-							<!-- <h3 class="title-card">WildTangent Casino</h3> -->
-							<img class="project-img left" src="/images/ProjectHeaders/wildtangent-casino-phones.png">
-							<div class="flex-wrap store-badge-wrap flex-justify-start flex-align-center">
-								<a href="https://play.google.com/store/apps/details?id=com.wildtangent.wildtangentcasino&hl=en" target="_blank">
-									<img class="store-badge" src="/images/google-play-badge.png" />
-								</a>
-								<a href="https://itunes.apple.com/us/app/wildtangent-casino-free-slots/id1039004412?mt=8" target="_blank">
-									<img class="store-badge" src="/images/app-store-badge.png" />
-								</a>
-							</div>
-							<a class="btn-normal" href="/projects/wildtangent-casino">View</a>
-						</div>
-						<div class="flex flex-col flex-justify-center flex-align-center margin-right-100">
-							<img class="project-header" src="/images/SectionHeaders/header_spellslingers_white.png" alt="SpellSlingers Project"/>
-							<!-- <h3 class="title-card">SpellSlingers</h3> -->
-							<img class="project-img" src="/images/ProjectHeaders/spellslingers-phone.png">
-							<div class="flex-wrap store-badge-wrap flex-justify-start">
-								<a href="http://legacygamesystems.com/our-demo-game-is-getting-a-makeover/" target="_blank" class="btn-badge flex-wrap flex-align-center">
-									<i class="fas fa-hourglass-half"></i>
-									<div class="flex-wrap flex-col flex-align-start">
-										<p class="btn-badge-first-p">Still in production</p>
-										<p>
-											<strong>View Info</strong>
-										</p>
-									</div>
-								</a>
-							</div>
-							<a class="btn-normal" href="/projects/spell-slingers">View</a>
-						</div>
-						<div class="flex flex-col flex-justify-center flex-align-center">
-							<img class="project-header" src="/images/SectionHeaders/header_stellarfortune_white.png" alt="Stellar Fortune Project"/>
-							<!-- <h3 class="title-card">Stellar Fortune</h3> -->
-							<img class="project-img" src="/images/ProjectHeaders/stellar-fortune-computer.png">
-							<div style="height:48.38;"></div>
-							<a class="btn-normal" href="/projects/stellar-fortune">View</a>
-						</div>
-					</div>
+				<div id="project-images" class="flex-wrap flex-justify-center mt-4">
+					<a href="/projects/wildtangent-casino"><img class="project-img left" src="/images/ProjectHeaders/wildtangent-casino-phones.png"></a>
+					<a class="mx-3" href="/projects/spell-slingers"><img class="project-img" src="/images/ProjectHeaders/spellslingers-phone.png"></a>
+					<a href="/projects/stellar-fortune"><img class="project-img right" src="/images/ProjectHeaders/stellar-fortune-computer.png"></a>
+				</div>
+				<div id="project-images-bg" class=casino-bg></div>
+				<div id="project-headers" class="flex flex-wrap flex-justify-center">
+					<a id="link-wt-casino" href="#" class="flex flex-align-center">
+						<h3>WildTangent Casino</h3>
+						<i class="fas fa-caret-down"></i>
+					</a>
+					<a id="link-spellslingers" href="#" class="flex flex-align-center">
+						<h3>SpellSlingers</h3>
+						<i class="fas fa-caret-down"></i>
+					</a>
+					<a  id="link-stellar-fortune" href="#" class="flex flex-align-center">
+						<h3>Stellar Fortune</h3>
+						<i class="fas fa-caret-down"></i>
+					</a>
 				</div>
 
 				<div class="flex flex-col flex-align-center text-black" style="grid-column: 1 / span 3; margin: 125px auto; max-width: 1500px;">

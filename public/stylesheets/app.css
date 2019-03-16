@@ -1,3 +1,5 @@
+ @import url('./vars.css');
+
 html, body {
 	margin: 0;
 	height: 100%;
@@ -22,7 +24,7 @@ h1 {
 }
 
 h2 {
-	color: #dbc5c5;
+	color: var(--color-main-light);
 	font-size: 1.5em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
@@ -35,11 +37,11 @@ h2 {
 	font-family: 'Francois One', sans-serif; 
 	letter-spacing: 2px; 
 	font-size: 1.25em; 
-	color:#9f9393;
+	color:var(--color-main-desat);
 }
 
 h3 {
-	color: #ee2524;
+	color: var(--color-main);
 	font-size: 1.75em;
 	font-family: "Francois One", sans-serif;
 	letter-spacing: 1px;
@@ -51,7 +53,7 @@ h3 {
 	padding: 0.5em 0.5em;
 	margin-bottom: 0.5em;
 	max-width: 500px;
-	border: 3px solid #ee2524;
+	border: 3px solid var(--color-main);
 }
 
 h4 {
@@ -79,7 +81,6 @@ ul li {
 	grid-area: header;
 	display: flex;
 	justify-content: center;
-	background-color: #a02828;
 	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
@@ -88,8 +89,6 @@ ul li {
 		transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 	background-position: center;
-	border-bottom: 1px solid #850606;
-	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 	padding: 2em 0 5em 0;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -130,18 +129,38 @@ ul li {
 	margin: 100px auto 1.25em auto;
 }
 
-#projects, #resume, #resume-start, #about, #reviews {
+#project-images, #project-headers, #resume, #resume-start, #about, #reviews {
 	grid-column: 1 / span 3;
 }
 
-#projects {
-	width: 100%;
-	margin-top: -75px;
+#project-images {
+	position: absolute;
+	margin-top: 0;
 	padding: 0 0 75px 0;
-	-webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
-	clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
+	width: 100%;
 }
 
+#project-images-bg {
+	grid-column: 1 / span 3;
+	margin-top: -75px;
+	height: 450px;
+	z-index: -1;
+}
+
+#project-headers {
+	color: white;
+	background-color: var(--color-icon-link-active);
+	margin-top: -1.5rem;
+	z-index: 2; 
+}
+
+#project-headers a {
+	margin-right: 6rem;
+}
+
+#project-headers a:last-of-type {
+	margin-right: 0;
+}
 .casino-bg {
 	background-image: url(/images/casino.jpg);
 	background-size: cover;
@@ -165,7 +184,7 @@ ul li {
  }
 
 .btn-normal {
-	color: #8d2f2f;
+	color: var(--color-main-dark);
 	margin-top: 1em;
 	padding: 0.5em 2em ;
 	text-decoration: none;
@@ -193,8 +212,8 @@ ul li {
 
 .btn-normal:active {
     color: black;
-    border-color: #ad9c9c;
-    background: linear-gradient(darkgrey, darkgrey, darkgrey, grey, #555);
+    border-color: var(--color-dark-grey);
+    background: linear-gradient(darkgrey, darkgrey, darkgrey, grey, var(--color-med-grey));
 }
 
 /* 	////////////////////////////////////////////
@@ -223,18 +242,44 @@ ul li {
 }
 
 .project-img {
-	width: 350px;
+	width: 300px;
 	height: auto;
-	transition: all 0.25s ease; 
+	transition: transform 0.25s ease; 
+}
+
+#project-headers a {
+	text-decoration: none;
+	padding: 0 2rem;
+}
+
+#project-headers a, #project-headers a h3 {
+	color: white;
+}
+
+#project-headers a i {
+	margin-left: 0.5rem;
+}
+
+#project-headers a:hover {
+	background-color: lightgrey;
 }
 
 .project-img:hover {
-	margin: 20px 0;
-	transform: rotate(5deg) scale(1.1, 1.1);
+	transform: scale(1.1);
 }
 
 .project-img.left:hover {
-	transform: rotate(-5deg) scale(1.1, 1.1);
+	transform: rotate(-2deg) scale(1.1, 1.1);
+}
+
+// TODO
+.project-img.left:hover ~ a#link-wt-casino h3 {
+	color: white;
+	background: purple;
+}
+
+.project-img.right:hover {
+	transform: rotate(2deg) scale(1.1, 1.1);
 }
 
 .project-img.secondary {
@@ -280,13 +325,13 @@ ul li {
 	display: inline-block;
 	border-radius: 50%;
 	padding: 2.5em;
-	background-color: #999;
+	background-color: var(--color-med-grey);
 	margin: 75px auto 0 auto;
 	transition: all 0.25s ease;
 }
 
 .icon-circle i {
-	color: #222;
+	color: var(--color-dark-grey);
 	font-size: 2em;
 }
 
@@ -315,21 +360,21 @@ ul li {
 
 .company {
 	justify-content: space-between;
-	background-color: #c8aaaa;
+	background-color: var(--color-main-light);
 	box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
 }
 
 .light-background {
-	background-color: #f1ebee;
+	background-color: var(--color-bg-light);
 	color: #2d292b;
 }
 
 .med-background {
-	background-color: #bfb9bc;
+	background-color: var(--color-light-grey);
 }
 
 .dark-background {
-	background-color: #c6bcc1;
+	background-color: var(--color-bg-dark);
 }
 
 .company-section, .brief-section {
@@ -343,7 +388,7 @@ ul li {
 }
 
 .company-img {
-	background-color: #a97e7e;
+	background-color: var(--color-company-img);
 	min-width: 225px;
 }
 
@@ -409,7 +454,7 @@ ul li {
 }
 
 .dark-red {
-	background-color: #8c1919;
+	background-color: var(--color-main-dark);
 }
 
 .banner-reverse {
@@ -488,7 +533,7 @@ ul li {
 }
 
 #about .chip-tag {
-	color: #bfb9bc;
+	color: var(--color-light-grey);
 	background-color: white;
 }
 
@@ -524,7 +569,7 @@ ul li {
 .chip-tag {
 	display: flex;
 	align-items: center;
-	color: #222;
+	color: var(--color-dark-grey);
 	background-color: white;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
@@ -676,8 +721,8 @@ ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #ee2524;
-	border: 1px solid #ff6160;
+	background-color: var(--color-main);
+	border: 1px solid var(--color-gallery-btn);
 	border-radius: 5px;
 }
 
@@ -709,13 +754,13 @@ ul li {
 }
 
 .gallery-btn:hover {
-	background-color: #ff4342;
+	background-color: var(--color-gallery-btn-light);
 }
 
 .gallery-btn:active {
-	background-color: #b20000;
-	color: #ff4342;
-	border-color: #ff4342;
+	background-color: var(--color-gallery-btn-dark);
+	color: var(--color-gallery-btn-light);
+	border-color: var(--color-gallery-btn-light);
 }
 
 .brief-section {
@@ -772,8 +817,8 @@ ul li {
 
 .contact {
 	grid-area: contact;
-	color: #dbc5c5;
-	background-color: #a02828;
+	color: var(--color-main-light);
+	background-color: var(--color-main-dark);
 	background-image: url(/images/Chalkboard_small.jpg);
 	background-repeat: repeat;
 	background-size: contain;
@@ -794,7 +839,7 @@ ul li {
 }
 
 .icon-link {
-	color: #dbc5c5;
+	color: var(--color-main-light);
 	text-decoration: none;
 }
 
@@ -803,7 +848,7 @@ ul li {
 }
 
 .icon-link:active {
-	color: #777;
+	color: var(--color-icon-link-active);
 }
 
 .phone {
@@ -819,152 +864,12 @@ ul li {
 .footer {
 	grid-area: footer;
 	margin-top: -35px;
-	color: #ee2524;
-	background-color: #8c1919;
+	color: var(--color-main);
+	background-color: var(--color-main-dark);
 	padding: 30px 16px 16px 16px;
 	-webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 }
-
-/* 	////////////////////////////////////////////
-	HELPER CLASSES - small, generic, reusable
-	////////////////////////////////////////////	*/
-
-.flex-wrap {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.flex {
-	display: flex;
-}
-
-.flex-section {
-	flex: 1;
-	min-width: 250px;
-}
-
-.flex-col {
-	flex-direction: column;
-}
-
-.flex-justify-center {
-	justify-content: center;
-}
-
-.flex-justify-betw {
-	justify-content: space-between;
-}
-
-.flex-justify-even {
-	justify-content: space-evenly;
-}
-
-.flex-justify-start {
-	justify-content: flex-start;
-}
-
-.flex-align-center {
-	align-items: center;
-}
-
-.flex-align-left {
-	align-content: stretch;
-}
-
-.flex-align-start {
-	align-content: flex-start;
-}
-
-.text-left {
-	text-align: left;
-}
-
-.text-black {
-	color: black;
-}
-
-.btn-regular {
-	background-color: #6d1110;
-	padding: 1em;
-}
-
-.width-third {
-	width: 33.3%;
-}
-
-.width-two-thirds {
-	width: 66.6%
-}
-
-.hidden {
-	display: none;
-}
-
-.circle-img {
-	border-radius: 50%;
-}
-
-.width-min-150 {
-	width: 150px;
-}
-
-.width-max-275 {
-	max-width: 275px;
-}
-
-.width-25-percent {
-	width: 25%;
-}
-
-.padding-25 {
-	padding: 25px;
-}
-
-.padding-top-50 {
-	padding-top: 50px;
-}
-
-.margin-top-10 {
-	margin-top: 10px;
-}
-
-.margin-top-50 {
-	margin-top: 50px;
-}
-
-.margin-bottom-only-25 {
-	margin: 0 0 25px 0;
-}
-
-.margin-bottom-20 {
-	margin-bottom: 20px;
-}
-
-.margin-0 {
-	margin: 0;
-}
-
-.margin-top-neg-100 {
-	margin-top: -100px;
-}
-
-.margin-top-neg-75 {
-	margin-top: -75px;
-}
-
-.margin-right-50 {
-	margin-right: 50px;
-}
-
-.margin-right-100 {
-	margin-right: 100px;
-}
-
-.opacity-33 {
-	opacity: 0.3;
-}
-
 
 /* 	////////////////////////////////////////////
 RESPONSIVENESS
@@ -991,10 +896,10 @@ RESPONSIVENESS
 
 @media screen and (max-width : 760px){
 
-	#projects {
+	#project-images {
 		margin-top: -62px;
-		-webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 95%);
-		clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 95%);
+		-webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 97%);
+		clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 97%);
 	}
 	
 	body {
