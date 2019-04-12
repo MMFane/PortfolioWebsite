@@ -1,109 +1,3 @@
-/* 	////////////////////////////////////////////
-    NAV
-////////////////////////////////////////////	*/ 
-
-/* .nav {
-    font-size: 0.75em;
-    position: fixed;
-    justify-content: center;
-    width: 100%;
-    background-color: #8c1919;
-    z-index: 2;
-}
-
-.nav-item {
-    color: #dbc5c5;
-    margin: 0.5em 0.5em;
-    padding: 0.5em;
-    text-decoration: none;
-    border: 1px solid #dbc5c5;
-}
-
-.nav-item i:first-of-type {
-    margin-right: 0.5em;
-}
-
-.nav-item:hover {
-    color: white;
-    border-color: white;
-}
-
-.nav-item:active {
-    color: #ad9c9c;
-    border-color: #ad9c9c;
-    background-color: #6d1110;
-}
-
-.nav-brand img {
-    height: 50px;
-    width: 50px;
-    margin: 0.5em 0.5em;
-}
-
-.nav-links {
-    align-items: center;
-} */
-
-/* 	////////////////////////////////////////////
-RESPONSIVENESS
-////////////////////////////////////////////	*/ 
-
-/* .show-menu {
-    width: 100%;
-    display: none;
-}
-
-.show-menu i {
-    font-size: 2em;
-    align-self: flex-end;
-    padding-right: 25px;
-}
-
-input[type=checkbox]{
-    display: none;
-}
-
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-
-@media screen and (max-width : 760px){
-    .nav-links {
-        display: none;
-    }
-
-    .nav-item {
-        width: 100%;
-        display: block;
-        margin: 0;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-        line-height: 40px;
-    }
-
-    .show-menu {
-        display: flex;
-    }
-
-    .desktop-brand img{
-        display: none;
-    }
-
-    .nav-brand img {
-        height: 40px;
-        width: 40px;
-        margin: 0.5em 0.5em;
-    }
-
-    #menu {
-        width: 100%;
-    }
-} */
-
-
-
-
 #menu {
     width: 100%;
     display: flex;
@@ -120,7 +14,6 @@ input[type=checkbox]:checked ~ #menu{
     margin: 0 10px;
 }
 
-/*Strip the ul of padding and list styling*/
 .nav ul {
     list-style-type:none;
     margin:0;
@@ -128,12 +21,12 @@ input[type=checkbox]:checked ~ #menu{
     text-align: center;
     position: absolute;
 }
-/*Create a horizontal list with spacing*/
+
 .nav li {
     display:inline-block;
     margin-right: 1px;
 }
-/*Style for menu links*/
+
 .nav li a {
     display: block;
     text-align: center;
@@ -144,54 +37,45 @@ input[type=checkbox]:checked ~ #menu{
     text-decoration: none;
 }
 
-/* li:first-of-type {
-    border-right: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-li:last-of-type {
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-} */
-
 .nav li ul li {
     border-bottom: 1px solid #8c1919;
 }
-/*Hover state for top level links*/
+
 .nav li:hover a {
     color: white;
     background: #a02d2d;
 }
-/*Style for dropdown links*/
 .nav li:hover ul a {
     background: #821414;
     color: #dbc5c5;
     height: 40px;
     line-height: 40px;
 }
-/*Hover state for dropdown links*/
+
 .nav li:hover ul a:hover {
     background: #a02d2d;
     color: white;
 }
-/*Hide dropdown links until they are needed*/
+
 .nav li ul {
     display: none;
 }
-/*Make dropdown links vertical*/
+
 .nav li ul li {
     display: block;
     float: none;
 }
-/*Prevent text wrapping*/
+
 .nav li ul li a {
     width: auto;
     min-width: 100px;
     padding: 0 20px;
 }
-/*Display the dropdown on hover*/
+
 .nav ul li a:hover + .hide, .hide:hover {
     display: block;
 }
-/*Style 'show menu' label button and hide it by default*/
+
 .show-menu {
     height: 50px;
     width: 100%;
@@ -208,35 +92,32 @@ li:last-of-type {
     margin-right: 20px;
 }
 
-/*Hide checkbox*/
 input[type=checkbox]{
     display: none;
 }
-/*Show menu when invisible checkbox is checked*/
+
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-/*Responsive Styles*/
+
 @media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
     .nav ul {
         position: static;
         display: none;
     }
-    /*Create vertical spacing*/
+
     .nav li {
         margin-bottom: 1px;
     }
-    /*Make all menu links full width*/
+
     .nav ul li, li a {
         width: 100%;
         margin: 0;
         padding-left: 0;
         padding-right: 0;
     }
-    /*Display 'show menu' link*/
+
     .show-menu {
-        /* display: block; */
         grid-column: 1 / span 3;
     }
 

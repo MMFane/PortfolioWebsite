@@ -34,9 +34,9 @@ h2 {
 
 .nee {
 	text-align: center;
-	font-family: 'Francois One', sans-serif; 
-	letter-spacing: 2px; 
-	font-size: 1.25em; 
+	font-family: 'Francois One', sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.25em;
 	color:var(--color-main-desat);
 }
 
@@ -151,7 +151,7 @@ ul li {
 	color: white;
 	background-color: var(--color-icon-link-active);
 	margin-top: -1.5rem;
-	z-index: 2; 
+	z-index: 2;
 }
 
 #project-headers a {
@@ -207,7 +207,7 @@ ul li {
 	color: white;
 	background: linear-gradient(lightgrey, lightgrey, lightgrey, darkgrey, grey);
 	border: 1px solid darkgrey;
-	
+
 }
 
 .btn-normal:active {
@@ -218,7 +218,7 @@ ul li {
 
 /* 	////////////////////////////////////////////
 	PROJECTS SECTION - 1 main project, 2 - 3 sub projects
-	////////////////////////////////////////////	*/ 
+	////////////////////////////////////////////	*/
 
 .proj-main {
 	height: 600px;
@@ -244,7 +244,7 @@ ul li {
 .project-img {
 	width: 300px;
 	height: auto;
-	transition: transform 0.25s ease; 
+	transition: transform 0.25s ease;
 }
 
 #project-headers a {
@@ -295,7 +295,7 @@ ul li {
 
 /* 	////////////////////////////////////////////
 	RESUME SECTIONS - languages/software/education & companies
-	////////////////////////////////////////////	*/ 
+	////////////////////////////////////////////	*/
 
 #lang-soft-edu {
 	padding: 0 10% 125px 10%;
@@ -485,7 +485,7 @@ ul li {
 }
 
 /* 	////////////////////////////////////////////
-	ABOUT SECTION - info about and image of me		  
+	ABOUT SECTION - info about and image of me
 	////////////////////////////////////////////	*/
 
 .artist-img {
@@ -505,7 +505,7 @@ ul li {
 .speech-bubble {
 	max-width: 1100px;
 	border-radius: 25px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
 	border-top-right-radius: 0;
 	padding: 25px;
 }
@@ -548,7 +548,7 @@ ul li {
 
 /* 	////////////////////////////////////////////
 	CHIPS - small bits of information with a tag
-	i.e. software or languages I know 		  
+	i.e. software or languages I know
 	////////////////////////////////////////////	*/
 
 .chip {
@@ -599,7 +599,7 @@ ul li {
 .bg-cover {
 	background-size: cover;
 	background-position: center;
-}	
+}
 
 .bg-proj-small {
 	background-position: center;
@@ -777,7 +777,7 @@ ul li {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.75);	
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 #zoom-image, #transition-image {
@@ -873,7 +873,7 @@ ul li {
 
 /* 	////////////////////////////////////////////
 RESPONSIVENESS
-////////////////////////////////////////////	*/ 
+////////////////////////////////////////////	*/
 
 @media screen and (max-width : 1557px){
 	#reviews .speech-bubble {
@@ -884,7 +884,7 @@ RESPONSIVENESS
 	.project-img {
 		width: 200px;
 	}
-	
+
 	#zoom-image, #transition-image{
 		width: 100%;
 		height: 90%;
@@ -901,7 +901,7 @@ RESPONSIVENESS
 		-webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 97%);
 		clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 97%);
 	}
-	
+
 	body {
 		font-size: 14px;
 	}
@@ -955,7 +955,7 @@ RESPONSIVENESS
 		width: 75px;
 		height: 75px;
 	}
-	 
+
 	h4 {
 		margin-top: 0;
 	}
@@ -1048,13 +1048,11 @@ RESPONSIVENESS
 	}
 }
 
-
-
 /* UNORDERED */
 
 .inset-section {
 	margin: 25px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); 
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
